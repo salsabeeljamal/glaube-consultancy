@@ -49,11 +49,11 @@ const Header = (props) => {
                 <div className="container">
                     <div className="header__top ul_li_between">
                         <div className="header__top-cta">
-                            <Image src={icon1} alt="" /><span>Help Desk :</span> +91 590 088 55
+                            <Image src={icon1} alt="" /><span>Whatsapp :</span> +351 920 213 055
                         </div>
                         <ul className="header__top-info ul_li">
                             <li><Image src={icon2} alt="" />Monday - Friday 09:00 am - 05:00 Pm</li>
-                            <li><Image src={icon3} alt="" />456 Elm Avenue Springfield, IL 62701</li>
+                            <li><Image src={icon3} alt="" />4785 - 298 TROFA,PORTO PORTUGAL</li>
                         </ul>
                     </div>
                 </div>
@@ -62,7 +62,7 @@ const Header = (props) => {
                 <div className="container">
                     <div className="header__inner ul_li_between">
                         <div className="header__logo">
-                            <Link onClick={ClickHandler} href="/"><Image src={logo} alt="" /></Link>
+                            <Link onClick={ClickHandler} href="/"><Image src={logo} alt="" width={'100px'}/></Link>
                         </div>
                         <div className="main-menu__wrap ul_li navbar navbar-expand-lg">
                             <nav className="main-menu collapse navbar-collapse">
@@ -114,30 +114,6 @@ const Header = (props) => {
                                 <div className="xb-nav-mobile-button" onClick={() => setMobailState(!mobailActive)}><i className="fal fa-bars"></i></div>
                             </div>
                         </div>
-                        <ul className="header__action ul_li">
-                            <li>
-                                <span className="header__search header-search-btn" onClick={() => setSearchState(!searchActive)}>
-                                    <Image src={icon4} alt="" />Search
-                                </span>
-                            </li>
-                            <li>
-                                <div className="header__language">
-                                    <ul>
-                                        <li><Link onClick={ClickHandler} href="/" className="lang-btn">
-                                            <div className="flag"><Image src={icon5} alt="" /></div>
-                                            English
-                                            <div className="arrow_down"><Image src={icon6} alt="" /></div>
-                                        </Link>
-                                            <ul className="lang_sub_list">
-                                                <li><Link onClick={ClickHandler} href="/">English</Link></li>
-                                                <li><Link onClick={ClickHandler} href="/">Arabic</Link></li>
-                                                <li><Link onClick={ClickHandler} href="/">Bangla</Link></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                        </ul>
                     </div>
                 </div>
             </div>
