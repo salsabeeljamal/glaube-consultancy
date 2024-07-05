@@ -15,7 +15,7 @@ const Hero = () => {
                     <div className="col-xl-6 col-lg-7">
                         <div className="hero__content">
                             <Slide direction='up' triggerOnce={'false'} duration={1200}>
-                                <h1>Immigration visa <br /> <span>Consulting</span></h1>
+                                <h1>Student visa <br /> <span>Consulting</span></h1>
                             </Slide>
                             <Slide direction='up' triggerOnce={'false'} duration={1400}>
                                 <p>Expert Guidance for a
