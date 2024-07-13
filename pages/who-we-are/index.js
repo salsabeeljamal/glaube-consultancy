@@ -21,10 +21,8 @@ import Image from 'next/image';
 
 
 
-const WhoWeAre = (props) => {
-    const ClickHandler = () => {
-        window.scrollTo(10, 0);
-    }
+const WhoWeArePage = (props) => {
+
     return (
         <Fragment>
             <Header />
@@ -93,4 +91,4 @@ const WhoWeAre = (props) => {
         </Fragment>
     )
 };
-export default WhoWeAre;
+export default WhoWeArePage;
