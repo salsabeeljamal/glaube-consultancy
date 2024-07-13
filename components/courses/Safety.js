@@ -1,8 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
-import pImg1 from '/public/images/images/course/it1.jpg'
-import pImg2 from '/public/images/images/course/it2.jpg'
-import pImg3 from '/public/images/images/course/it3.jpg'
+import pImg1 from '/public/images/images/course/saf1.jpg'
 
 import port from '/public/images/country/port.png'
 
@@ -13,37 +11,23 @@ import Image from 'next/image'
 
 const Pakage = [
     {
-        title: 'MASTERS IN ARTIFICIAL INTELLIGENCE',
+        title: 'POST GRADGUATION SPECILIZATION IN SAFETY MANAGEMENT',
         country: 'Portugal',
-        disc:"UNIVERSITY IPCA(POLITECHNIQUE INSTITUTE OF CAVADE AND AVE)",
+        disc:"ATLANTICA INSTITUTE OF UNIVERSITARIO, LISBON",
         pImg: pImg1,
         flag: port,
-    },
-    {
-        title: 'MASTERS INCOMPUTER ENGINEERING AND MOBILE COMPUTING',
-        country: 'Portugal',
-        disc:"POLITECHNIQUE INSTITUTE OF LEIRIA",
-        pImg: pImg2,
-        flag: port,
-    },
-    {
-        title: 'MASTERS IN COMPUTER SCIENCE',
-        country: 'Portugal',
-        disc:"POLITECHNIQUE INSTITUTE OF PORTALEGRE",
-        pImg: pImg3,
-        flag: port,
-    },
+    }
 
 ]
 
 
-const ItCourses = (props) => {
+const SafetyCourses = (props) => {
 
     return (
         <section className="package package-bg pos-rel pb-80">
             <div className="container">
                 <div className="sec-title sec-title--travel text-center mb-40">
-                    <h3 className='text-start'>INFORMATION TECHNOLOGY ( IT )</h3>
+                    <h3 className='text-start'>SAFETY MANAGEMENT</h3>
                 </div>
                 <div className="row mt-none-30">
                     {Pakage.map((pakage, pitem) => (
@@ -78,4 +62,4 @@ const ItCourses = (props) => {
     )
 }
 
-export default ItCourses;
+export default SafetyCourses;

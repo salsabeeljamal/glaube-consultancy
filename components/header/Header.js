@@ -92,13 +92,6 @@ const Header = (props) => {
                         <div className="xb-menu-close xb-hide-xl xb-close" onClick={() => setMobailState(!mobailActive)}></div>
                         <div className="xb-logo-mobile xb-hide-xl">
                             <Link onClick={ClickHandler} href="/" rel="home"><Image src={logo} alt="" /></Link></div>
-                        {/* <div className="xb-header-mobile-search xb-hide-xl">
-                            <form role="search" onSubmit={SubmitHandler}>
-                                <input type="text" placeholder="Search..." name="s" className="search-field" />
-                                <button type="submit" className="search-submit">
-                                </button>
-                            </form>
-                        </div> */}
                         <nav className="xb-header-nav">
                             <MobileMenu />
                         </nav>

@@ -1,23 +1,11 @@
 import React from 'react'
 import Link from 'next/link'
-import pImg1 from '/public/images/package/img_01.jpg'
-import pImg2 from '/public/images/package/img_02.jpg'
-import pImg3 from '/public/images/package/img_03.jpg'
-import pImg4 from '/public/images/package/img_04.jpg'
-import pImg5 from '/public/images/package/img_05.jpg'
-import pImg6 from '/public/images/package/img_06.jpg'
+import pImg1 from '/public/images/images/course/bus1.jpg'
+import pImg2 from '/public/images/images/course/bus2.jpeg'
+import pImg3 from '/public/images/images/course/bus3.jpg'
 
-import fIcon1 from '/public/images/country/img_01.png'
-import fIcon2 from '/public/images/country/img_02.png'
-import fIcon3 from '/public/images/country/img_03.png'
-import fIcon4 from '/public/images/country/img_04.png'
-import fIcon5 from '/public/images/country/img_05.png'
-import fIcon6 from '/public/images/country/img_06.png'
 import port from '/public/images/country/port.png'
-import fin from '/public/images/country/fin.png'
 
-import fhIcon1 from '/public/images/icon/clock.svg'
-import fhIcon2 from '/public/images/icon/user-2.svg'
 import Image from 'next/image'
 
 
@@ -35,14 +23,14 @@ const Pakage = [
         title: 'MASTERS IN INTERNATIONAL BUSINESS',
         country: 'Portugal',
         disc:"POLITECHNIQUE INSTITUTE OF LEIRIA",
-        pImg: pImg1,
+        pImg: pImg2,
         flag: port,
     },
     {
         title: 'MASTERS IN MANAGEMENT',
         country: 'Portugal',
         disc:"ATLANTICA INSTITUTE OF UNIVERSITARIO, LISBON",
-        pImg: pImg1,
+        pImg: pImg3,
         flag: port,
     },
 
