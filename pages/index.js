@@ -28,15 +28,8 @@ const HomePage = () => {
                 <PartnerSection />
                 <CountrySection />
                 <ServiceSection />
-                {/* <About /> */}
-                {/* <FunFactSection /> */}
                 <Testimonial />
-                {/* <TeamSection /> */}
                 <StudentFaqSection/>
-                {/* <FaqSection /> */}
-                {/* <BlogSection /> */}
-                {/* <NewsLatter /> */}
-                <ContactSection />
                 <Footer />
                 <Scrollbar />
             </div>

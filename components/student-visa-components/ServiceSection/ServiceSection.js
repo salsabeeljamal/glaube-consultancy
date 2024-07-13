@@ -24,9 +24,9 @@ const ServiceSection = (props) => {
                         <span className="sec-title--sub"><Image src={aIcon1} alt="" />services<Image src={aIcon1} alt="" /></span>
                         <h3 className="sec-title--heading">Easy Study Abroad</h3>
                     </div>
-                    <div className="xb-service__btn mb-20">
+                    {/* <div className="xb-service__btn mb-20">
                         <Link onClick={ClickHandler} href="/services" className="xb-tran-btn">more services<span><Image src={aIcon2} alt="" /></span></Link>
-                    </div>
+                    </div> */}
                 </div>
                 <div className="xb-service2__wrap ul_li">
                     {Services.slice(6, 14).map((service, srv) => (
@@ -38,9 +38,9 @@ const ServiceSection = (props) => {
                                 <div className="xb-item--holder">
                                     <h3 className="xb-item--title"><Link onClick={ClickHandler} href={'/service-single/[slug]'} as={`/service-single/${service.slug}`}>{service.title}</Link></h3>
                                     <p className="xb-item--content">{service.description}</p>
-                                    <Link onClick={ClickHandler} href={'/service-single/[slug]'} as={`/service-single/${service.slug}`} className="xb-item--link">Read more</Link>
+                                    {/* <Link onClick={ClickHandler} href={'/service-single/[slug]'} as={`/service-single/${service.slug}`} className="xb-item--link">Read more</Link> */}
                                 </div>
-                                <Link onClick={ClickHandler} href={'/service-single/[slug]'} as={`/service-single/${service.slug}`} className="xb-item--link-full"></Link>
+                                {/* <Link onClick={ClickHandler} href={'/service-single/[slug]'} as={`/service-single/${service.slug}`} className="xb-item--link-full"></Link> */}
                             </div>
                         </div>
                     ))}

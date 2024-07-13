@@ -48,9 +48,6 @@ const CoursesPage = (props) => {
                     <BachlorsCourses/>
                 </div>
             </section>
-            {/* <NewsLatter /> */}
-            <ContactSection />
-            {/* <StudentFaqSection/> */}
             <Footer />
             <Scrollbar />
         </Fragment>

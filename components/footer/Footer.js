@@ -3,7 +3,7 @@ import Link from 'next/link'
 import icon1 from '/public/images/icon/f_call.svg'
 import icon2 from '/public/images/icon/f_mail.svg'
 import icon3 from '/public/images/icon/card_img.png'
-import logo from '/public/images/logo/logo.svg'
+import logo from '/public/images/logo/reverselogo.svg'
 import Services from '../../api/service'
 import CountryList from '../../api/country'
 import Image from 'next/image'
@@ -14,29 +14,23 @@ const ClickHandler = () => {
 
 const Footer = (props) => {
     return (
-        <footer className="site-footer gray-bg pt-65">
+        <footer className="site-footer black-bg pt-65">
             <div className="container">
                 <div className="row mt-none-30 pb-60 d-flex justify-content-center justify-content-lg-between">
 
 
                     <div className="col-lg-4 mt-30 col-md-6 d-flex align-items-center">
-                        <div className="footer-style-three">
+                        <div className="footer-style-three content">
                             <Image src={logo} alt="" />
-                            <div>
-                                <ul className="d-flex mt-30 justify-content-center">
+                            <p className='fw-light mt-20'>
+                            Rua Costa Ferreira Edifício,<br />Casa Avó-nº326 1 Escritório 5 São Martinho <br />4785 - 298 Trofa,porto Portugal    
+                            </p>
+                            <div className=''>
+                                <ul className="d-flex mt-15">
                                     <li className="ul_li d-inline-block text-nowrap"><span><Image className='mr-10' src={icon1} alt="" /></span>+91590 088 55
                                     </li>
                                     <li className="ul_li d-inline-block text-nowrap"><span><Image className='mr-10 ml-20' src={icon2} alt="" /></span>e.visa@gmail.com
                                     </li>
-                                </ul>
-                            </div>
-                            <div className="footer-links text-lg-end">
-                                {/* <h4>follow us</h4> */}
-                                <ul className="footer__socials  ul_li_right mt-30 justify-content-center">
-                                    <li className='mr-40'><Link onClick={ClickHandler} href="/"><i className="fab fa-twitter"></i></Link></li>
-                                    <li className='mr-40'><Link onClick={ClickHandler} href="/"><i className="fab fa-facebook-f"></i></Link></li>
-                                    <li className='mr-40'><Link onClick={ClickHandler} href="/"><i className="fab fa-linkedin-in"></i></Link></li>
-                                    <li className=''><Link onClick={ClickHandler} href="/"><i className="fab fa-instagram"></i></Link></li>
                                 </ul>
                             </div>
                         </div>
@@ -72,36 +66,16 @@ const Footer = (props) => {
 
                     </div>
 
-                    <div className="col-lg-4 mt-60 col-md-12 d-flex align-items-center mt-30 justify-content-center">
+                    <div className="col-lg-4 mt-60 col-md-12 footer__social-block">
                         <div className="footer__widget">
-                            <h3 className="widget-title d-lg-block flex-column text-center text-lg-start">Address</h3>
-                            <ul className="d-lg-block ms-lg-0 d-inline-flex flex-column footer__links list-unstyled text-center text-lg-start">
-                                <li>
-                                    <div>
-                                        UAE
-                                    </div>
-                                    <p className='fw-light'>
-                                        Capitol Tower, 1703, Neumiya, Ajman
-                                    </p>
-                                </li>
-                                <li>
-                                    <div>
-                                        Kochi
-                                    </div>
-                                    <p className='fw-light'>
-                                        Sabari lane, South Janatha Road, Palarivattom,<br /> Kochi, Kerala - 682025
-                                        <br />+91 7994211151
-                                    </p>
-                                </li>
-                                <li>
-                                    <div>
-                                        UK
-                                    </div>
-                                    <p className='fw-light'>
-                                        21 Redhatch Drive, Reading, Berkshire RG6 5QS<br />+447834376897
-                                    </p>
-                                </li>
-
+                            <h3 className="widget-title d-lg-block flex-column text-center text-lg-start">Social Links</h3>
+                        </div>
+                        <div className="footer-links">
+                            <ul className="footer__socials  ul_li_right mt-30 justify-content-center">
+                                <li className='mr-40'><Link onClick={ClickHandler} href="/"><i className="fab fa-twitter"></i></Link></li>
+                                <li className='mr-40'><Link onClick={ClickHandler} href="/"><i className="fab fa-facebook-f"></i></Link></li>
+                                <li className='mr-40'><Link onClick={ClickHandler} href="/"><i className="fab fa-linkedin-in"></i></Link></li>
+                                <li className=''><Link onClick={ClickHandler} href="/"><i className="fab fa-instagram"></i></Link></li>
                             </ul>
                         </div>
                     </div>
@@ -143,7 +117,7 @@ const Footer = (props) => {
                 </div>
                 <div className="footer__copyright ul_li_between justify-content-center justify-content-lg-between">
                     <div className="footer__copyright-text mt-15">
-                        Copyright © 2024 e.visa All rights reserved.
+                        Copyright © 2024 Glaube Consultancy All rights reserved.
                     </div>
                     <div className="footer__copyright-img mt-20">
                         <Image src={icon3} alt="" />

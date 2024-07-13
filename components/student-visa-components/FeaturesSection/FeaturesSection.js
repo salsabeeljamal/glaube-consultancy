@@ -31,7 +31,7 @@ const FeaturesSection = (props) => {
 
     return (
 
-        <section className="feature border-bottom border-top mt-120" >
+        <section className="feature border-bottom border-top" >
             <div className="container">
                 <div className="xb-feature xb-feature1 ul_li_between">
                     {Features.map((features, fitem) => (

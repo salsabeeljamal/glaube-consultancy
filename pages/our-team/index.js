@@ -50,26 +50,8 @@ const TeamPage = (props) => {
                             </div>
                         ))}
                     </div>
-
-                    <div className="sec-title text-center pt-130 mb-65">
-                        <h2 className="mb-40 wow skewIn">HAPPY CLIENTS</h2>
-                    </div>
-                    <div className="row mt-none-30">
-                        {Teams.slice(0, 8).map((team, tm) => (
-                            <div className="col-xl-3 col-lg-4 col-md-6 mt-30" key={tm}>
-                                <div className="xb-team text-center">
-                                    <div className="xb-item--inner" data-parallax='{"scale" : 1}'>
-                                        <div className="xb-item--img">
-                                            <Image src={team.tImg} alt="" />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
                 </div>
             </section>
-            <ContactSection />
             <Footer />
             <Scrollbar />
         </Fragment >

@@ -188,7 +188,7 @@
                 @include transition(.3s cubic-bezier(.67,.04,.3,.91));
             }
             &::after {
-                background: linear-gradient(1deg, #D91334 0%, rgba(0, 0, 0, 0.51) 100%);
+                background: linear-gradient(1deg, #977601 0%, rgba(0, 0, 0, 0.51) 100%);
                 opacity: 0;
                 height: 100%;
                 @include transform(scale(0.9));
