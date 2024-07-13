@@ -186,7 +186,7 @@ const BlogSingle = (props) => {
                                                 <div className="col-lg-6">
                                                     <div className="xb-item--field">
                                                         <span><Image src={icon4} alt="" /></span>
-                                                        <input type="text" placeholder="e.visa@services.com" />
+                                                        <input type="text" placeholder="info@glaubes.eu" />
                                                     </div>
                                                 </div>
                                                 <div className="col-12">

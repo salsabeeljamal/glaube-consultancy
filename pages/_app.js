@@ -13,7 +13,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <div>
       <Head>
-        <title>E.visa - Immigration and Visa Consulting Next Js Template</title>
+        <title>Glaube Consultancy</title>
       </Head>
       <Component {...pageProps} />
     </div>

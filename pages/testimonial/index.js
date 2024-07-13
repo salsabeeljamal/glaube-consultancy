@@ -21,8 +21,8 @@ const TestimonialPage = (props) => {
         {
             id: '01',
             tImg: tsm1,
-            Des: "Elisa Doward, a Canadian university student, embarked on a journey abroad with the help of E.visa Company Service. With their support, she successfully pursued her education overseas, gaining valuable experiences and knowledge.",
-            Des2: 'Upon returning to Canada, Elisas determination and E.visa Company Services guidance led her to a thriving career in Seattle. She now excels in her field, serving as an inspiration for others seeking success in there life as well.',
+            Des: "Elisa Doward, a Canadian university student, embarked on a journey abroad with the help of Glaubes Company Service. With their support, she successfully pursued her education overseas, gaining valuable experiences and knowledge.",
+            Des2: 'Upon returning to Canada, Elisas determination and Glaubes Company Services guidance led her to a thriving career in Seattle. She now excels in her field, serving as an inspiration for others seeking success in there life as well.',
             Des3: 'Elisas story showcases the power of determination and expert support in achieving ones dreams.',
             Title: 'Elisa Doward',
             sub: 'Canadian Student',
@@ -30,7 +30,7 @@ const TestimonialPage = (props) => {
         {
             id: '02',
             tImg: tsm2,
-            Des: "Malinda Hira, a bright student from a Canadian university, embarked on an incredible journey with E.visa Company Service. She had a thirst for international experiences and sought to study abroad. With E.visa's expert assistance, Malinda's dream became a reality.",
+            Des: "Malinda Hira, a bright student from a Canadian university, embarked on an incredible journey with Glaubes Company Service. She had a thirst for international experiences and sought to study abroad. With Glaubes's expert assistance, Malinda's dream became a reality.",
             Des2: "Studying overseas expanded Malinda's horizons and allowed her to immerse herself in diverse cultures. Her commitment to learning and adapting to new environments paid off, and she graduated with honors. Armed with a global perspective, Malinda returned to Canada and is now making waves in Seattle, excelling in her chosen field.",
             Des3: "Her story is a testament to the transformative power of international education and determination.",
             Title: 'Malinda Hira',
@@ -40,7 +40,7 @@ const TestimonialPage = (props) => {
         {
             id: '03',
             tImg: tsm3,
-            Des: "David Mia, a Canadian university student, turned to E.visa Company Service for assistance in navigating the complexities of studying abroad. With their support, David pursued his education in a foreign land, gaining valuable insights and experiences.",
+            Des: "David Mia, a Canadian university student, turned to Glaubes Company Service for assistance in navigating the complexities of studying abroad. With their support, David pursued his education in a foreign land, gaining valuable insights and experiences.",
             Des2: "Upon his return to Canada, David's international background set him apart in the job market. He secured a coveted position in Seattle and quickly rose through the ranks, making his mark in the industry. His journey illustrates the career opportunities that await those who embrace global experiences and seize them with determination.",
             Title: 'David Mia',
             sub: 'Autralian Student',
@@ -49,7 +49,7 @@ const TestimonialPage = (props) => {
         {
             id: '04',
             tImg: tsm4,
-            Des: "Jordan Alvz, a Canadian university student, enlisted the help of E.visa Company Service to embark on an overseas academic adventure. With their guidance, Jordan smoothly transitioned to studying abroad, expanding his horizons and honing his skills.",
+            Des: "Jordan Alvz, a Canadian university student, enlisted the help of Glaubes Company Service to embark on an overseas academic adventure. With their guidance, Jordan smoothly transitioned to studying abroad, expanding his horizons and honing his skills.",
             Des2: "Back in Canada, Jordan leveraged his international experiences to secure a promising career in Seattle.",
             Des3: "His dedication and unique perspective have made him an asset to his industry. Jordan's story exemplifies how studying abroad can lead to unparalleled professional growth and personal development.",
             Title: 'Jordan Alvz',
@@ -59,9 +59,9 @@ const TestimonialPage = (props) => {
         {
             id: '05',
             tImg: tsm5,
-            Des: "Akhil Hossien, a determined student from a Canadian university, sought E.visa Company Service's expertise to facilitate his journey abroad. His desire for international education led him to pursue his dreams with unwavering determination.",
+            Des: "Akhil Hossien, a determined student from a Canadian university, sought Glaubes Company Service's expertise to facilitate his journey abroad. His desire for international education led him to pursue his dreams with unwavering determination.",
             Des2: "Akhil returned to Canada armed with knowledge and skills that set him apart in the job market.",
-            Des3: "He secured a rewarding career in Seattle, where he continues to thrive. Akhil's story highlights how international experiences can open doors to success, and E.visa Company Service played a pivotal role in his remarkable journey.",
+            Des3: "He secured a rewarding career in Seattle, where he continues to thrive. Akhil's story highlights how international experiences can open doors to success, and Glaubes Company Service played a pivotal role in his remarkable journey.",
             Title: 'Akhil Hossien',
             sub: 'Indian Student',
             style: 'style-5',
@@ -69,9 +69,9 @@ const TestimonialPage = (props) => {
         {
             id: '06',
             tImg: tsm6,
-            Des: "Gomez Raha, a Canadian university student, entrusted E.visa Company Service to help him embark on a life-changing international journey. With their support, Gomez pursued his education abroad, broadening his horizons and gaining invaluable insights.",
+            Des: "Gomez Raha, a Canadian university student, entrusted Glaubes Company Service to help him embark on a life-changing international journey. With their support, Gomez pursued his education abroad, broadening his horizons and gaining invaluable insights.",
             Des2: "Upon his return to Canada, Gomez's global perspective made him a standout candidate in the competitive job market. He secured a prestigious position in Seattle, where he continues to excel.",
-            Des3: "Gomez's story serves as a testament to the transformative power of international education and the essential role E.visa Company Service played in his journey to success.",
+            Des3: "Gomez's story serves as a testament to the transformative power of international education and the essential role Glaubes Company Service played in his journey to success.",
             Des4: "Company Service to help him embark on a life-changing international journey. With their support, Gomez pursued his education abroad, broadening his horizons and gaining invaluable insights of the oscitation .",
             Des5: "He secured a rewarding career in Seattle, where he continues to thrive. Akhil's story highlights how international experiences .",
             Title: 'Gomez Raha',
@@ -81,7 +81,7 @@ const TestimonialPage = (props) => {
         {
             id: '03',
             tImg: tsm7,
-            Des: "Makhacav Rim, a determined individual from a diverse background, embarked on a remarkable journey with the help of E.visa Company Service. Makhacav's dream was to pursue higher education in Canada, and E.visa became the.",
+            Des: "Makhacav Rim, a determined individual from a diverse background, embarked on a remarkable journey with the help of Glaubes Company Service. Makhacav's dream was to pursue higher education in Canada, and Glaubes became the.",
             Title: 'Makhacav Rim',
             sub: 'Japan Student',
             style: 'style-7',

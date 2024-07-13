@@ -67,7 +67,7 @@ const ContactForm = (props) => {
                     className="form-control"
                     onBlur={(e) => changeHandler(e)}
                     onChange={(e) => changeHandler(e)}
-                    placeholder="e.visa@services.com" />
+                    placeholder="info@glaubes.eu" />
                 {validator.message('email', forms.email, 'required|email')}
             </div>
             <div className="xb-item--field">

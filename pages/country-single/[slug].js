@@ -35,7 +35,7 @@ const CountrySinglePage = (props) => {
                         <div className="col-lg-8">
                             <div className="single-content">
                                 <h3>The {CountryDetails?.title}</h3>
-                                <h4>Score 8+ Bands with Certified and experienced e.visa Coach</h4>
+                                <h4>Score 8+ Bands with Certified and experienced Glaube Coach</h4>
                                 <p>When it comes to world-class education, {CountryDetails?.title} stands as a beacon of excellence, offering a welcoming environment, top-tier institutions, and a diverse cultural tapestry. Studying in Canada isn't just about gaining a degree. </p>
                                 <p> It's about immersing yourself in an enriching educational experience that prepares you for global success. Here's a glimpse into what makes studying in Canada .</p>
                                 <div className="single-img mt-35 mb-70">

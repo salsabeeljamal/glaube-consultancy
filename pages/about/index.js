@@ -23,7 +23,7 @@ const AboutUsPage = (props) => {
     return (
         <Fragment>
             <Header />
-            <PageTitle pageTitle={'About e.visa'} pagesub={'About'} />
+            <PageTitle pageTitle={'About Glaube'} pagesub={'About'} />
             <section className="about pt-130">
                 <div className="container">
                     <div className="row mb-40 align-items-center">

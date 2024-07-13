@@ -68,7 +68,7 @@ const TeamSinglePage = (props) => {
                         </div>
                         <div className="team-single__content">
                             <h3>Personal experience</h3>
-                            <p>Since embarking on my journey as an Immigration Visa Specialist at e.visa in 2005 my professional expertise has expanded across a vast spectrum of intricacies within this dynamic field. As a dedicated immigration visa specialist, my focal point revolves around harnessing a multitude of skills to extend comprehensive guidance and support to individuals embarking.. </p>
+                            <p>Since embarking on my journey as an Immigration Visa Specialist at Glaube in 2005 my professional expertise has expanded across a vast spectrum of intricacies within this dynamic field. As a dedicated immigration visa specialist, my focal point revolves around harnessing a multitude of skills to extend comprehensive guidance and support to individuals embarking.. </p>
                             <p>So, welcome to this expedition—an expedition fueled by dedication, a panoramic view of expertise, and an unrelenting determination to escort individuals through the intricate passages of immigration. This journey shares a common thread with web design—precision. Just as web designers carefully .</p>
                             <h3>Professional skills</h3>
                             <p>As an Immigration Visa Specialist, my career has been built upon a solid foundation of expertise and proficiency in guiding individuals through the intricate landscape of immigration.</p>
@@ -136,7 +136,7 @@ const TeamSinglePage = (props) => {
                                                 <label for="email">Email</label>
                                                 <div className="field-inner pos-rel">
                                                     <span className="icon"><Image src={icon2} alt="" /></span>
-                                                    <input id="email" type="email" placeholder="e.visa@services.com" required />
+                                                    <input id="email" type="email" placeholder="info@glaubes.eu" required />
                                                 </div>
                                             </div>
                                         </div>

@@ -37,7 +37,7 @@ const ServiceSinglePage = (props) => {
                                 <div className="single-img mt-35 mb-70">
                                     <Image src={eImg1} alt="" />
                                 </div>
-                                <h3>How e.visa work</h3>
+                                <h3>How Glaube work</h3>
                                 <ul className="about-list ul_li list-unstyled">
                                     <li>
                                         <div className="xb-item--inner">
