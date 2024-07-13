@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:bx="https://boxy-svg.com">
+  <defs>
+    <linearGradient id="gradient-3-6" gradientUnits="userSpaceOnUse" x1="11.422" y1="8.886" x2="11.422" y2="8.886" xlink:href="#gradient-3"/>
+    <linearGradient id="gradient-3" bx:pinned="true">
+      <stop offset="1" style="stop-color: rgb(251, 73, 39);"/>
+    </linearGradient>
+    <linearGradient id="gradient-3-0" gradientUnits="userSpaceOnUse" x1="10.502" y1="11.955" x2="10.502" y2="11.955" xlink:href="#gradient-3"/>
+    <linearGradient id="gradient-3-4" gradientUnits="userSpaceOnUse" x1="10.502" y1="11.955" x2="10.502" y2="11.955" xlink:href="#gradient-3"/>
+    <linearGradient id="gradient-3-3" gradientUnits="userSpaceOnUse" x1="11.998" y1="12.349" x2="11.998" y2="22.01" xlink:href="#gradient-3"/>
+    <linearGradient id="gradient-3-1" gradientUnits="userSpaceOnUse" x1="12" y1="2" x2="12" y2="18" xlink:href="#gradient-3"/>
+    <linearGradient id="gradient-3-5" gradientUnits="userSpaceOnUse" x1="12.04" y1="7.255" x2="12.04" y2="12.78" xlink:href="#gradient-3"/>
+  </defs>
+  <g id="g-3" transform="matrix(15.026190757751465, 0, 0, 15.026190757751465, 81.8138427734375, 89.2353515625)" style="">
+    <path d="M 13.877 4.284 L 8.968 4.284 C 6.513 4.284 5.285 5.512 5.285 7.967 L 5.285 15.944 C 5.285 16.281 5.56 16.558 5.899 16.558 L 13.877 16.558 C 16.332 16.558 17.559 15.331 17.559 12.876 L 17.559 7.967 C 17.559 5.512 16.332 4.284 13.877 4.284 Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="paint-order: stroke; fill-rule: nonzero; stroke: rgb(255, 255, 255); fill: rgb(255, 255, 255);"/>
+    <path d="M 8.354 8.886 L 14.49 8.886" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" style="fill-rule: nonzero; fill: rgb(255, 255, 255); paint-order: fill; fill-opacity: 0; stroke: url('#gradient-3-6');"/>
+    <path d="M 8.354 11.955 L 12.649 11.955" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" style="paint-order: stroke; fill-rule: nonzero; fill: url('#gradient-3-0'); stroke: url('#gradient-3-4');"/>
+  </g>
+</svg>

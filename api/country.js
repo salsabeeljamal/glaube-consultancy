@@ -1,9 +1,9 @@
-import cnIcon1 from '/public/images/country/img_01.png'
-import cnIcon2 from '/public/images/country/img_02.png'
-import cnIcon3 from '/public/images/country/img_03.png'
-import cnIcon4 from '/public/images/country/img_04.png'
-import cnIcon5 from '/public/images/country/img_05.png'
-import cnIcon6 from '/public/images/country/img_06.png'
+import cnIcon1 from '/public/images/country/port.png'
+import cnIcon2 from '/public/images/country/spain.png'
+import cnIcon3 from '/public/images/country/eur.png'
+import cnIcon4 from '/public/images/country/lith.png'
+import cnIcon5 from '/public/images/country/irel.png'
+import cnIcon6 from '/public/images/country/fin.png'
 import cnIcon7 from '/public/images/country/img_07.png'
 import cnIcon8 from '/public/images/country/img_08.png'
 import cnIcon9 from '/public/images/country/img_09.png'
@@ -26,38 +26,38 @@ const CountryList = [
     {
         Id: '1',
         sIcon:cnIcon1,
-        title: 'Canada',
-        slug: 'Canada',
+        title: 'Portugal',
+        slug: 'Portugal',
     },
     {
         Id: '2',
         sIcon:cnIcon2,
-        title: 'Belgium',
-        slug: 'Belgium',
+        title: 'Spain',
+        slug: 'Spain',
     },
     {
         Id: '3',
         sIcon:cnIcon3,
-        title: 'Denmark',
-        slug: 'Denmark',
+        title: 'European Union',
+        slug: 'European Union',
     },
     {
         Id: '4',
         sIcon:cnIcon4,
-        title: 'Australia',
-        slug: 'Australia',
+        title: 'Lithuania',
+        slug: 'Lithuania',
     },
     {
         Id: '5',
         sIcon:cnIcon5,
-        title: 'France',
-        slug: 'France',
+        title: 'Ireland',
+        slug: 'Ireland',
     },
     {
         Id: '6',
         sIcon:cnIcon6,
-        title: 'Germany',
-        slug: 'Germany',
+        title: 'Finland',
+        slug: 'Finland',
     },
     {
         Id: '7',

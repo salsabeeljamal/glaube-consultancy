@@ -13,16 +13,16 @@ const CtaSection = (props) => {
 
     return (
         <section className="cta">
-            <div className="container">
+            <div className="container pt-90">
                 <div className="xb-cta__wrap pos-rel bg_img" style={{ backgroundImage: `url(${'/images/bg/cta_shape.png'})` }}>
                     <div className="row">
                         <div className="col-lg-7 offset-lg-5">
                             <div className="xb-cta">
                                 <div className="sec-title sec-title--white style-2 mb-20">
-                                    <span className="sec-title--sub"><Image src={aIcon1} alt="" />Free Visa<Image src={aIcon1} alt="" /></span>
-                                    <h3 className="sec-title--heading">Students and Experts Love Us <br/> 100% Success Rate</h3>
+                                    <span className="sec-title--sub"><Image src={aIcon1} alt="" />What We Do<Image src={aIcon1} alt="" /></span>
+                                    <p className="text-white">Helping them achieve their dreams in countries like <br/>Portugal, Spain, Lithuania, and Ukraine etc.</p>
                                 </div>
-                                <Link onClick={ClickHandler} href="/contact" className="xb-tran-btn">apply today<span><Image src={aIcon2} alt=""/></span></Link>
+                                {/* <Link onClick={ClickHandler} href="/contact" className="xb-tran-btn">apply today<span><Image src={aIcon2} alt=""/></span></Link> */}
                             </div>
                         </div>
                     </div>

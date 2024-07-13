@@ -72,14 +72,14 @@ const CountrySection = (props) => {
                     <div className="">
                         <div className="">
                             <Slider {...settings}>
-                                {CountryList.slice(18, 24).map((country, cnt) => (
+                                {CountryList.slice(0, 6).map((country, cnt) => (
                                     <div className="xb-country2" key={cnt}>
                                         <div className="xb-item--inner text-center">
                                             <div className="xb-item--flag mb-20">
                                                 <Image src={country.sIcon} alt="" />
                                             </div>
                                             <h3 className="xb-item--title">{country.title}</h3>
-                                            <Link onClick={ClickHandler} href={'/country-single/[slug]'} as={`/country-single/${country.slug}`} className="xb-item--link"></Link>
+                                            {/* <Link onClick={ClickHandler} href={'/country-single/[slug]'} as={`/country-single/${country.slug}`} className="xb-item--link"></Link> */}
                                         </div>
                                     </div>
                                 ))}

@@ -6,7 +6,7 @@ import Image from 'next/image'
 
 const ContactSection = (props) => {
     return (
-        <section className="contact contact-pt gray-bg">
+        <section className="contact contact-pts gray-bg">
             <div className="container">
                 <div className="xb-contact pos-rel">
                     <div className="row">

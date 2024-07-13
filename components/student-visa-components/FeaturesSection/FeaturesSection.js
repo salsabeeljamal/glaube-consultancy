@@ -8,15 +8,15 @@ import Image from 'next/image'
 
 const Features = [
     {
-        title: 'Visa Process, no Interviews',
+        title: 'Flexible Study Options',
         icon: fIcon1,
     },
     {
-        title: 'Faster Processing',
+        title: 'Hassle-Free Application Process',
         icon: fIcon2,
     },
     {
-        title: 'Up-to-Date Information',
+        title: 'Expert Guidance and Support',
         icon: fIcon3,
     },
     {
@@ -31,7 +31,7 @@ const FeaturesSection = (props) => {
 
     return (
 
-        <section className="feature border-bottom" >
+        <section className="feature border-bottom border-top mt-120" >
             <div className="container">
                 <div className="xb-feature xb-feature1 ul_li_between">
                     {Features.map((features, fitem) => (

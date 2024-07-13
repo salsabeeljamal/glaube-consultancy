@@ -7,19 +7,19 @@ import aIcon2 from '/public/images/shape/c_shape2.png'
 
 const FunFact = [
     {
-        title: '30',
-        subTitle: 'We Have Worked With Clients',
-        symbol: 'K',
+        title: '2000',
+        subTitle: 'Students',
+        symbol: '+',
     },
     {
-        title: '100',
-        subTitle: 'Successful Visa Process Rate',
-        symbol: '%',
+        title: '15',
+        subTitle: 'Countries',
+        symbol: '+',
     },
     {
-        title: '1',
-        subTitle: 'Application Approval Processing Time',
-        symbol: 'DAY',
+        title: '5',
+        subTitle: 'Years',
+        symbol: '+',
     }
 
 ]
@@ -51,18 +51,6 @@ const StudentFunFact = (props) => {
                             </div>
                         </div>
                     ))}
-                </div>
-            </div>
-            <div className="fanfact-shape">
-                <div className="shape shape--1">
-                    <div className="shape-inner" data-parallax='{"x":-50,"y":-70}'>
-                        <Image src={aIcon1} alt="" />
-                    </div>
-                </div>
-                <div className="shape shape--2">
-                    <div className="shape-inner" data-parallax='{"x":50,"y":80}'>
-                        <Image src={aIcon2} alt="" />
-                    </div>
                 </div>
             </div>
             <span id="counter" className='d-none' />

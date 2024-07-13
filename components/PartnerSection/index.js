@@ -3,6 +3,8 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Link from 'next/link'
+import FeaturesSection from '../../components/student-visa-components/FeaturesSection/FeaturesSection'
+import About from '../../components/student-visa-components/about/about';
 import pimg1 from '/public/images/brand/img_01.png'
 import pimg2 from '/public/images/brand/img_02.png'
 import pimg3 from '/public/images/brand/img_03.png'
@@ -90,27 +92,9 @@ const PartnerSection = (props) => {
 
     return (
 
-        <section className="brand pt-110 pb-90">
-            <div className="container">
-                <h2 className="brand-title text-center mb-50">
-                    <span><span>We're proud to work with our preferred partners</span></span>
-                </h2>
-                <div className="xb-swiper-sliders brand-slider">
-                    <div className="xb-carousel-inner">
-                        <div className="xb-swiper-container">
-                            <div className="xb-swiper-wrapper">
-                                <Slider {...settings}>
-                                    {partners.map((partner, pitem) => (
-                                        <div className="xb-swiper" key={pitem}>
-                                            <Link href="/"><Image src={partner.pImg} alt="" /></Link>
-                                        </div>
-                                    ))}
-                                </Slider>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <section className="brand">
+            <FeaturesSection />
+            <About />
         </section>
     );
 }

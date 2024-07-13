@@ -2,12 +2,13 @@ import React from 'react'
 import Link from 'next/link'
 import shape1 from '/public/images/shape/br_shape1.png'
 import shape2 from '/public/images/shape/br_shape2.png'
+// import business from '/public/images/images/business.png'
 import Image from 'next/image'
 
 
 const PageTitle = (props) => {
     return (
-        <section className="breadcrumb pos-rel bg_img" style={{ backgroundImage: `url(${'/images/bg/breadcrumb_bg.jpg'})` }}>
+        <section className="breadcrumb pos-rel bg_img" style={{ backgroundImage: `url(${'/images/images/business3.jpg'})` }}>
             <div className="container">
                 <div className="breadcrumb__content">
                     <h2 className="breadcrumb__title">{props.pageTitle}</h2>
@@ -17,11 +18,11 @@ const PageTitle = (props) => {
                     </ul>
                 </div>
             </div>
-            <div className="breadcrumb__circle">
+            {/* <div className="breadcrumb__circle">
                 <span className="big" data-parallax='{"y" : 100, "scale" : 0.1}'></span>
                 <span className="small" data-parallax='{"y" : 100, "scale" : 0.1}'></span>
-            </div>
-            <div className="breadcrumb__shape">
+            </div> */}
+            {/* <div className="breadcrumb__shape">
                 <div className="shape shape--1">
                     <div className="shape-inner" data-parallax='{"x":-50,"y":80}'>
                         <Image src={shape1} alt="" />
@@ -32,7 +33,7 @@ const PageTitle = (props) => {
                         <Image src={shape2} alt="" />
                     </div>
                 </div>
-            </div>
+            </div> */}
         </section >
     )
 }

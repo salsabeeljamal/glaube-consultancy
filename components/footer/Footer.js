@@ -3,6 +3,7 @@ import Link from 'next/link'
 import icon1 from '/public/images/icon/f_call.svg'
 import icon2 from '/public/images/icon/f_mail.svg'
 import icon3 from '/public/images/icon/card_img.png'
+import logo from '/public/images/logo/logo.svg'
 import Services from '../../api/service'
 import CountryList from '../../api/country'
 import Image from 'next/image'
@@ -15,51 +16,97 @@ const Footer = (props) => {
     return (
         <footer className="site-footer gray-bg pt-65">
             <div className="container">
-                <div className="row mt-none-30 pb-60">
-                    <div className="col-lg-3 mt-30 col-md-6 footer__custom-col">
-                        <div className="footer__widget">
-                            <h3 className="widget-title">Do you have questions or went more information? Contact us now</h3>
-                            <ul className="footer__cta list-unstyled mt-50">
-                                <li className="ul_li"><span><Image src={icon1} alt="" /></span>+91590 088 55
-                                </li>
-                                <li className="ul_li"><span><Image src={icon2} alt="" /></span>e.visa@gmail.com
-                                </li>
-                            </ul>
+                <div className="row mt-none-30 pb-60 d-flex justify-content-center justify-content-lg-between">
+
+
+                    <div className="col-lg-4 mt-30 col-md-6 d-flex align-items-center">
+                        <div className="footer-style-three">
+                            <Image src={logo} alt="" />
+                            <div>
+                                <ul className="d-flex mt-30 justify-content-center">
+                                    <li className="ul_li d-inline-block text-nowrap"><span><Image className='mr-10' src={icon1} alt="" /></span>+91590 088 55
+                                    </li>
+                                    <li className="ul_li d-inline-block text-nowrap"><span><Image className='mr-10 ml-20' src={icon2} alt="" /></span>e.visa@gmail.com
+                                    </li>
+                                </ul>
+                            </div>
+                            <div className="footer-links text-lg-end">
+                                {/* <h4>follow us</h4> */}
+                                <ul className="footer__socials  ul_li_right mt-30 justify-content-center">
+                                    <li className='mr-40'><Link onClick={ClickHandler} href="/"><i className="fab fa-twitter"></i></Link></li>
+                                    <li className='mr-40'><Link onClick={ClickHandler} href="/"><i className="fab fa-facebook-f"></i></Link></li>
+                                    <li className='mr-40'><Link onClick={ClickHandler} href="/"><i className="fab fa-linkedin-in"></i></Link></li>
+                                    <li className=''><Link onClick={ClickHandler} href="/"><i className="fab fa-instagram"></i></Link></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                    <div className="col-lg-3 mt-30 col-md-6 footer__custom-col">
-                        <div className="footer__widget">
-                            <h3 className="widget-title">Explore Link</h3>
-                            <ul className="footer__links list-unstyled">
-                                <li><Link onClick={ClickHandler} href="/about"><span><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+
+
+                    <div className="col-lg-3 mt-60 col-md-12 sfooter__custom-col d-flex d-md-inline-flex d-lg-flex justify-content-lg-end justify-content-center">
+                        <div className="footer__widget d-flex flex-column d-lg-block align-items-center">
+                            <h3 className="widget-title sd-lg-block">Explore Link</h3>
+                            <ul className="d-grid d-lg-block  footer__links list-unstyled text-nowrap" style={{gridTemplateColumns:"1fr 1fr",gridGap:"0 40px"}}>
+                                <li className=''><Link onClick={ClickHandler} href="/who-we-are"><span><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
                                     viewBox="0 0 13 13" fill="none">
                                     <path d="M6.5 0C6.72067 3.49437 9.5056 6.27934 13 6.5C9.5056 6.72067 6.72067 9.5056 6.5 13C6.27934 9.5056 3.49437 6.72067 0 6.5C3.49437 6.27934 6.27934 3.49437 6.5 0Z"
                                         fill="#B1B4BA" />
                                 </svg></span>About Us</Link></li>
-                                <li><Link onClick={ClickHandler} href="/blog"><span><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                                <li className=''><Link onClick={ClickHandler} href="/contact"><span><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
                                     viewBox="0 0 13 13" fill="none">
                                     <path d="M6.5 0C6.72067 3.49437 9.5056 6.27934 13 6.5C9.5056 6.72067 6.72067 9.5056 6.5 13C6.27934 9.5056 3.49437 6.72067 0 6.5C3.49437 6.27934 6.27934 3.49437 6.5 0Z"
                                         fill="#B1B4BA" />
-                                </svg></span>Blog</Link></li>
-                                <li><Link onClick={ClickHandler} href="/testimonial"><span><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
-                                    viewBox="0 0 13 13" fill="none">
-                                    <path d="M6.5 0C6.72067 3.49437 9.5056 6.27934 13 6.5C9.5056 6.72067 6.72067 9.5056 6.5 13C6.27934 9.5056 3.49437 6.72067 0 6.5C3.49437 6.27934 6.27934 3.49437 6.5 0Z"
-                                        fill="#B1B4BA" />
-                                </svg></span>Testimonials</Link></li>
-                                <li><Link onClick={ClickHandler} href="/contact"><span><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                                </svg></span>Contact</Link></li>
+                                <li className=''><Link onClick={ClickHandler} href="/terms"><span><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
                                     viewBox="0 0 13 13" fill="none">
                                     <path d="M6.5 0C6.72067 3.49437 9.5056 6.27934 13 6.5C9.5056 6.72067 6.72067 9.5056 6.5 13C6.27934 9.5056 3.49437 6.72067 0 6.5C3.49437 6.27934 6.27934 3.49437 6.5 0Z"
                                         fill="#B1B4BA" />
                                 </svg></span>Terms & Conditions</Link></li>
-                                <li><Link onClick={ClickHandler} href="/contact"><span><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                                <li className=''><Link onClick={ClickHandler} href="/privacy"><span><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
                                     viewBox="0 0 13 13" fill="none">
                                     <path d="M6.5 0C6.72067 3.49437 9.5056 6.27934 13 6.5C9.5056 6.72067 6.72067 9.5056 6.5 13C6.27934 9.5056 3.49437 6.72067 0 6.5C3.49437 6.27934 6.27934 3.49437 6.5 0Z"
                                         fill="#B1B4BA" />
                                 </svg></span>Privacy Policy</Link></li>
                             </ul>
                         </div>
+
                     </div>
-                    <div className="col-lg-3 mt-30 col-md-6 footer__custom-col">
+
+                    <div className="col-lg-4 mt-60 col-md-12 d-flex align-items-center mt-30 justify-content-center">
+                        <div className="footer__widget">
+                            <h3 className="widget-title d-lg-block flex-column text-center text-lg-start">Address</h3>
+                            <ul className="d-lg-block ms-lg-0 d-inline-flex flex-column footer__links list-unstyled text-center text-lg-start">
+                                <li>
+                                    <div>
+                                        UAE
+                                    </div>
+                                    <p className='fw-light'>
+                                        Capitol Tower, 1703, Neumiya, Ajman
+                                    </p>
+                                </li>
+                                <li>
+                                    <div>
+                                        Kochi
+                                    </div>
+                                    <p className='fw-light'>
+                                        Sabari lane, South Janatha Road, Palarivattom,<br /> Kochi, Kerala - 682025
+                                        <br />+91 7994211151
+                                    </p>
+                                </li>
+                                <li>
+                                    <div>
+                                        UK
+                                    </div>
+                                    <p className='fw-light'>
+                                        21 Redhatch Drive, Reading, Berkshire RG6 5QS<br />+447834376897
+                                    </p>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+                    {/* <div className="col-lg-3 mt-30 col-md-6 footer__custom-col">
                         <div className="footer__widget">
                             <h3 className="widget-title">Services</h3>
                             <ul className="footer__links list-unstyled">
@@ -76,8 +123,8 @@ const Footer = (props) => {
                                 ))}
                             </ul>
                         </div>
-                    </div>
-                    <div className="col-lg-3 mt-30 col-md-6 footer__custom-col">
+                    </div> */}
+                    {/* <div className="col-lg-3 mt-30 col-md-6 footer__custom-col">
                         <div className="footer__widget">
                             <h3 className="widget-title">Our branches</h3>
                             <ul className="footer__links list-unstyled">
@@ -90,9 +137,11 @@ const Footer = (props) => {
                                 ))}
                             </ul>
                         </div>
-                    </div>
+                    </div> */}
+
+
                 </div>
-                <div className="footer__copyright ul_li_between">
+                <div className="footer__copyright ul_li_between justify-content-center justify-content-lg-between">
                     <div className="footer__copyright-text mt-15">
                         Copyright © 2024 e.visa All rights reserved.
                     </div>

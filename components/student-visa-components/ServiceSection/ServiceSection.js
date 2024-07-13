@@ -46,7 +46,7 @@ const ServiceSection = (props) => {
                     ))}
                 </div>
             </div>
-            <div className="service-shape">
+            {/* <div className="service-shape">
                 <div className="shape shape--1">
                     <div className="shape-inner" data-parallax='{"x":-50,"y":-70}'>
                         <Image src={shape1} alt="" />
@@ -67,7 +67,7 @@ const ServiceSection = (props) => {
                         <Image src={shape4} alt="" />
                     </div>
                 </div>
-            </div>
+            </div> */}
         </section>
     );
 }

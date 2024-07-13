@@ -205,6 +205,20 @@
             }
         }
     }
+    .footer-linkss {
+        li {
+            &:not(:last-child) {
+                margin-right: 45px;
+            }
+            a {
+                // color: #A3A3A3;
+                color: #099c74;
+                &:hover {
+                    color: var(--color-black);
+                }
+            }
+        }
+    }
     .footer__social {
         @include respond(md) {
             justify-content: start;

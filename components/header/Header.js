@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link'
+import { useRouter } from 'next/router';
 import icon1 from '/public/images/icon/n_pad.svg'
 import icon2 from '/public/images/icon/time.svg'
 import icon3 from '/public/images/icon/location.svg'
@@ -11,6 +12,7 @@ import MobileMenu from '../MobileMenu/MobileMenu'
 import Image from 'next/image';
 
 const Header = (props) => {
+    const router = useRouter();
 
     const [searchActive, setSearchState] = useState(false);
     const [mobailActive, setMobailState] = useState(false);
@@ -67,45 +69,12 @@ const Header = (props) => {
                         <div className="main-menu__wrap ul_li navbar navbar-expand-lg">
                             <nav className="main-menu collapse navbar-collapse">
                                 <ul>
-                                    <li className="menu-item-has-children active"><Link onClick={ClickHandler} href="/"><span>Home</span></Link>
-                                        <ul className="submenu">
-                                            <li><Link onClick={ClickHandler} href="/"><span>Immigration</span></Link></li>
-                                            <li><Link onClick={ClickHandler} href="/home-studient-visa"><span>Studient Visa</span></Link></li>
-                                            <li><Link onClick={ClickHandler} href="/home-travel-agency"><span>Travel Agency</span></Link></li>
-                                        </ul>
+                                    <li className={router.pathname === '/' ? 'active' : ''}><Link onClick={ClickHandler} href="/"><span>Home</span></Link>
                                     </li>
-                                    <li className="menu-item-has-children">
-                                        <Link onClick={ClickHandler} href="/"><span>Pages</span></Link>
-                                        <ul className="submenu">
-                                            <li><Link onClick={ClickHandler} href="/services"><span>Services</span></Link></li>
-                                            <li><Link onClick={ClickHandler} href="/service-single/Tourist-Visa"><span>Service Details</span></Link></li>
-                                            <li><Link onClick={ClickHandler} href="/coaching"><span>Coaching</span></Link></li>
-                                            <li><Link onClick={ClickHandler} href="/coaching-single/Take-IELTS"><span>Coaching Details</span></Link></li>
-                                            <li><Link onClick={ClickHandler} href="/visa"><span>Visa</span></Link></li>
-                                            <li><Link onClick={ClickHandler} href="/visa-single/Commercial-Visa"><span>Visa Details</span></Link></li>
-                                            <li><Link onClick={ClickHandler} href="/team"><span>Team</span></Link></li>
-                                            <li><Link onClick={ClickHandler} href="/team-single/Esther-Howard"><span>Team Details</span></Link></li>
-                                            <li><Link onClick={ClickHandler} href="/testimonial"><span>Testimonials</span></Link></li>
-                                            <li><Link onClick={ClickHandler} href="/faq"><span>FAQ</span></Link></li>
-                                            <li><Link onClick={ClickHandler} href="/404"><span>404</span></Link></li>
-                                        </ul>
-                                    </li>
-                                    <li><Link onClick={ClickHandler} href="/about"><span>About us</span></Link></li>
-                                    <li className="menu-item-has-children">
-                                        <Link onClick={ClickHandler} href="/"><span>Country</span></Link>
-                                        <ul className="submenu">
-                                            <li><Link onClick={ClickHandler} href="/country"><span>Country</span></Link></li>
-                                            <li><Link onClick={ClickHandler} href="/country-single/Australia"><span>Country Details</span></Link></li>
-                                        </ul>
-                                    </li>
-                                    <li className="menu-item-has-children">
-                                        <Link onClick={ClickHandler} href="/"><span>Blog</span></Link>
-                                        <ul className="submenu">
-                                            <li><Link onClick={ClickHandler} href="/blog"><span>Blog</span></Link></li>
-                                            <li><Link onClick={ClickHandler} href="/blog-single/Cultural-adjustment-thriving-in-a-new-country"><span>Blog Details</span></Link></li>
-                                        </ul>
-                                    </li>
-                                    <li><Link onClick={ClickHandler} href="/contact"><span>Contact</span></Link></li>
+                                    <li className={router.pathname === '/who-we-are' ? 'active' : ''}><Link onClick={ClickHandler} href="/who-we-are"><span>Who We Are</span></Link></li>
+                                    <li className={router.pathname === '/courses' ? 'active' : ''}><Link onClick={ClickHandler} href="/courses"><span>Courses</span></Link></li>
+                                    <li className={router.pathname === '/our-team' ? 'active' : ''}><Link onClick={ClickHandler} href="/our-team"><span>Our Team</span></Link></li>
+                                    <li className={router.pathname === '/contact' ? 'active' : ''}><Link onClick={ClickHandler} href="/contact"><span>Contact</span></Link></li>
                                 </ul>
                             </nav>
                         </div>
@@ -123,13 +92,13 @@ const Header = (props) => {
                         <div className="xb-menu-close xb-hide-xl xb-close" onClick={() => setMobailState(!mobailActive)}></div>
                         <div className="xb-logo-mobile xb-hide-xl">
                             <Link onClick={ClickHandler} href="/" rel="home"><Image src={logo} alt="" /></Link></div>
-                        <div className="xb-header-mobile-search xb-hide-xl">
+                        {/* <div className="xb-header-mobile-search xb-hide-xl">
                             <form role="search" onSubmit={SubmitHandler}>
                                 <input type="text" placeholder="Search..." name="s" className="search-field" />
                                 <button type="submit" className="search-submit">
                                 </button>
                             </form>
-                        </div>
+                        </div> */}
                         <nav className="xb-header-nav">
                             <MobileMenu />
                         </nav>

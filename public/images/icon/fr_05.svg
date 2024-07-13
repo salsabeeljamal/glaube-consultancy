@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:bx="https://boxy-svg.com">
+  <defs>
+    <linearGradient id="gradient-3-0" gradientUnits="userSpaceOnUse" x1="512" y1="64" x2="512" y2="960" gradientTransform="matrix(2.079538, 0, 0, 2.079538, -545.979462, -620.190201)" xlink:href="#gradient-3"/>
+    <linearGradient id="gradient-3" bx:pinned="true">
+      <stop offset="1" style="stop-color: rgb(251, 73, 39);"/>
+    </linearGradient>
+    <linearGradient id="gradient-3-1" gradientUnits="userSpaceOnUse" x1="512" y1="392" x2="512" y2="632" gradientTransform="matrix(2.079538, 0, 0, 2.079538, -545.979462, -620.190201)" xlink:href="#gradient-3"/>
+    <linearGradient id="gradient-3-2" gradientUnits="userSpaceOnUse" x1="12" y1="2" x2="12" y2="22" gradientTransform="matrix(0.613684, 0, 0, 0.613684, 4.057803, 3.05696)" xlink:href="#gradient-3"/>
+    <linearGradient id="gradient-3-4" gradientUnits="userSpaceOnUse" x1="10.5" y1="14.5" x2="10.5" y2="14.5" gradientTransform="matrix(1, 0, 0, 1, 0, 0)" xlink:href="#gradient-3"/>
+  </defs>
+  <g id="SVGRepo_bgCarrier" stroke-width="0" transform="matrix(0.14223501086235046, 0, 0, 0.14223501086235046, 176.99821472167957, 173.06170654296875)" style=""/>
+  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" transform="matrix(0.14223501086235046, 0, 0, 0.14223501086235046, 176.99821472167957, 173.06170654296875)" style=""/>
+  <g id="g-1" stroke-width="0" transform="matrix(14.506660461425781, 0, 0, 14.506660461425781, 398.0985107421875, 235.9217529296875)" style=""/>
+  <g id="g-2" stroke-linecap="round" stroke-linejoin="round" transform="matrix(14.506660461425781, 0, 0, 14.506660461425781, 398.0985107421875, 235.9217529296875)" style=""/>
+  <g id="g-3" transform="matrix(15.026190757751465, 0, 0, 15.026190757751465, 81.8138427734375, 89.2353515625)" style="">
+    <path d="M 13.877 4.284 L 8.968 4.284 C 6.513 4.284 5.285 5.512 5.285 7.967 L 5.285 15.944 C 5.285 16.281 5.56 16.558 5.899 16.558 L 13.877 16.558 C 16.332 16.558 17.559 15.331 17.559 12.876 L 17.559 7.967 C 17.559 5.512 16.332 4.284 13.877 4.284 Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="paint-order: stroke; fill: url('#gradient-3-2'); fill-rule: nonzero; stroke: rgb(255, 255, 255);"/>
+    <path d="M 8.354 8.886 L 14.49 8.886" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" style="fill-rule: nonzero; fill: rgb(255, 255, 255); paint-order: fill; fill-opacity: 0; stroke: rgb(255, 255, 255);"/>
+    <path d="M 8.354 11.955 L 12.649 11.955" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" style="paint-order: stroke; fill: url('#gradient-3-4'); fill-rule: nonzero; stroke: rgb(255, 255, 255);"/>
+  </g>
+</svg>
