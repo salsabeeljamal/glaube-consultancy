@@ -29,7 +29,7 @@ const Header2 = (props) => {
                             <Link onClick={ClickHandler} href="/"><Image src={logo} alt="" /></Link>
                         </div>
                         <ul className="xb-item--info ul_li">
-                            <li><span className="gradient-bg"><Image src={icon1} alt="" /></span>infoe.visa@gmail.com</li>
+                            <li><span className="gradient-bg"><Image src={icon1} alt="" /></span>info@glaubes.eu</li>
                             <li><span className="gradient-bg"><Image src={icon2} alt="" /></span>+91-2054875454</li>
                         </ul>
                         <ul className="xb-item--social ul_li">

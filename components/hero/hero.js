@@ -32,7 +32,6 @@ const Hero = () => {
                                 <div>
                                     <div className="btns">
                                         <Link onClick={ClickHandler} className="thm-btn" href="/contact">Book Appointment</Link>
-                                        <Link onClick={ClickHandler} className="thm-btn thm-btn--white" href="/about">Read Story</Link>
                                     </div>
                                 </div>
                             </Slide>
