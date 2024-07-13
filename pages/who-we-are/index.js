@@ -1,23 +1,16 @@
 import React, { Fragment } from 'react';
-import Link from "next/link";
 import Header from '../../components/header/Header';
 import PageTitle from '../../components/pagetitle/PageTitle'
 import Scrollbar from '../../components/scrollbar/scrollbar'
 import Footer from '../../components/footer/Footer';
 import CtaSection from '../../components/student-visa-components/CtaSection/CtaSection';
 import StudentFunFact from '../../components/student-visa-components/StudentFunFact/StudentFunFact';
-import Teams from '../../api/team'
 import About from '../../components/student-visa-components/about/about';
-import PartnerSection from '../../components/PartnerSection';
-import ContactSection from '../../components/ContactSection';
-import aboutImg from '/public/images/about/about_img3.jpg'
-import aboutImg2 from '/public/images/bg/mission.jpg'
-import aboutImg3 from '/public/images/bg/vission.jpg'
 import professionalism from '/public/images/images/professionalism.jpg'
 import commitment from '/public/images/images/commitment.jpg'
-import NewsLatter from '../../components/NewsLatter/NewsLatter';
-import CoreValue from '../../components/coreValue/CoreValue';
+
 import Image from 'next/image';
+import CoreValue from '../../components/CoreValue';
 
 
 

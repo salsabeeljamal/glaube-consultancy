@@ -12,12 +12,8 @@ import fhIcon3 from '/public/images/icon/fr_03_h.svg'
 import fhIcon6 from '/public/images/icon/fr_06_h.svg'
 import fhIcon4 from '/public/images/icon/fr_04_h.svg'
 import fhIcon5 from '/public/images/icon/fr_05_h.svg'
-// import fhIcon3 from '/public/images/icon/fr_03_h.svg'
-
 import aIcon1 from '/public/images/icon/h_star.png'
 
-import shape1 from '/public/images/shape/f_shape1.png'
-import shape2 from '/public/images/shape/f_shape2.png'
 import Image from 'next/image'
 
 
