@@ -51,9 +51,9 @@
                 align-items: center;
                 display: inline-block;
                 &:hover {
-                    color: var(--color-dark);
+                    color: #fff;
                     & > span svg path {
-                        fill: var(--color-primary);
+                        fill: #fff;
                     }
                 }
                 & > span {
