@@ -3,7 +3,8 @@
   <defs>
     <linearGradient id="gradient-3-6" gradientUnits="userSpaceOnUse" x1="11.422" y1="8.886" x2="11.422" y2="8.886" xlink:href="#gradient-3"/>
     <linearGradient id="gradient-3" bx:pinned="true">
-      <stop offset="1" style="stop-color: rgb(251, 73, 39);"/>
+     <stop stop-color="#977601"/>
+      <!-- <stop offset="1" stop-color="#fdcc1b"/> -->
     </linearGradient>
     <linearGradient id="gradient-3-0" gradientUnits="userSpaceOnUse" x1="10.502" y1="11.955" x2="10.502" y2="11.955" xlink:href="#gradient-3"/>
     <linearGradient id="gradient-3-4" gradientUnits="userSpaceOnUse" x1="10.502" y1="11.955" x2="10.502" y2="11.955" xlink:href="#gradient-3"/>

@@ -54,13 +54,12 @@ const About = (props) => {
                 <div className="row align-items-center mt-none-30">
                     <div className="col-xl-3 col-lg-4 mt-30">
                         <div className="about-btn">
-                            <Link onClick={ClickHandler}  className="grd-btn" href="/about">e.visa Histoy<span><Image src={aIcon2} alt="" /></span></Link>
+                            <Link onClick={ClickHandler}  className="grd-btn" href="/who-we-are">More Insight<span><Image src={aIcon2} alt="" /></span></Link>
                         </div>
                     </div>
                     <div className="col-xl-5 col-lg-4 mt-30">
                         <div className="xb-about-content">
                             <p>Unlock Your Educational Journey Abroad: The Essential Student Visa GuideYour Gateway to Global Learning</p>
-                            <Link onClick={ClickHandler} href="/about">Explore More Insight About us<i className="far fa-long-arrow-right"></i></Link>
                         </div>
                     </div>
                     <div className="col-xl-4 col-lg-4 mt-30">

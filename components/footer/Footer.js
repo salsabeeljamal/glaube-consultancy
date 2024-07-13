@@ -27,9 +27,9 @@ const Footer = (props) => {
                             </p>
                             <div className=''>
                                 <ul className="d-flex mt-15">
-                                    <li className="ul_li d-inline-block text-nowrap"><span><Image className='mr-10' src={icon1} alt="" /></span>+91590 088 55
+                                    <li className="ul_li d-inline-block text-nowrap"><span><Image className='mr-10' src={icon1} alt="" /></span>+351 590 088 55
                                     </li>
-                                    <li className="ul_li d-inline-block text-nowrap"><span><Image className='mr-10 ml-20' src={icon2} alt="" /></span>e.visa@gmail.com
+                                    <li className="ul_li d-inline-block text-nowrap"><span><Image className='mr-10 ml-20' src={icon2} alt="" /></span>info@glaubes.eu
                                     </li>
                                 </ul>
                             </div>
