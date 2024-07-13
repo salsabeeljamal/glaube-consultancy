@@ -1,23 +1,12 @@
 import React from 'react'
 import Link from 'next/link'
-import pImg1 from '/public/images/package/img_01.jpg'
-import pImg2 from '/public/images/package/img_02.jpg'
-import pImg3 from '/public/images/package/img_03.jpg'
-import pImg4 from '/public/images/package/img_04.jpg'
-import pImg5 from '/public/images/package/img_05.jpg'
-import pImg6 from '/public/images/package/img_06.jpg'
+import pImg1 from '/public/images/images/course/bach1.jpg'
+import pImg2 from '/public/images/images/course/bach2.jpg'
+import pImg3 from '/public/images/images/course/bach3.jpeg'
+import pImg4 from '/public/images/images/course/bach4.jpg'
 
-import fIcon1 from '/public/images/country/img_01.png'
-import fIcon2 from '/public/images/country/img_02.png'
-import fIcon3 from '/public/images/country/img_03.png'
-import fIcon4 from '/public/images/country/img_04.png'
-import fIcon5 from '/public/images/country/img_05.png'
-import fIcon6 from '/public/images/country/img_06.png'
 import port from '/public/images/country/port.png'
-import fin from '/public/images/country/fin.png'
 
-import fhIcon1 from '/public/images/icon/clock.svg'
-import fhIcon2 from '/public/images/icon/user-2.svg'
 import Image from 'next/image'
 
 
@@ -35,21 +24,21 @@ const Pakage = [
         title: 'INTERNATIONAL BACHELOR DEGREE IN BUSINESS ADM',
         country: 'Portugal',
         disc:"CHATHOLICA LISBON BUSINESS AND ECONOMICS",
-        pImg: pImg1,
+        pImg: pImg2,
         flag: port,
     },
     {
         title: 'INTERNATIONAL BACHELOR DEGREE IN BUSINESS ADM',
         country: 'Portugal',
         disc:"UNIVERSITY OF PORTUCALENSE",
-        pImg: pImg1,
+        pImg: pImg3,
         flag: port,
     },
     {
         title: 'BACHELORS IN SPORTS AND TOURISM MANAGEMENT',
         country: 'Portugal',
         disc:"LITHUANIAN SPORTS UNIVERSITY",
-        pImg: pImg1,
+        pImg: pImg4,
         flag: port,
     },
 
