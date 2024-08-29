@@ -53,7 +53,7 @@ const About = (props) => {
                 </div>
                 <div className="row align-items-center mt-none-30">
                     <div className="col-xl-3 col-lg-4 mt-30">
-                        <div className="about-btn">
+                        <div className="about-btn text-lg-start text-center">
                             <Link onClick={ClickHandler}  className="grd-btn" href="/who-we-are">More Insight<span><Image src={aIcon2} alt="" /></span></Link>
                         </div>
                     </div>

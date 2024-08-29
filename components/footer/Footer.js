@@ -22,11 +22,11 @@ const Footer = (props) => {
                     <div className="col-lg-4 mt-30 col-md-6 d-flex align-items-center">
                         <div className="footer-style-three content">
                             <Image src={logo} alt="" />
-                            <p className='fw-light mt-20'>
+                            <p className='fw-light mt-20 text-center'>
                             Rua Costa Ferreira Edifício,<br />Casa Avó-nº326 1 Escritório 5 São Martinho <br />4785 - 298 Trofa,porto Portugal    
                             </p>
                             <div className=''>
-                                <ul className="d-flex mt-15">
+                                <ul className="d-flex mt-15 justify-content-center">
                                     <li className="ul_li d-inline-block text-nowrap"><span><Image className='mr-10' src={icon1} alt="" /></span>+351 590 088 55
                                     </li>
                                     <li className="ul_li d-inline-block text-nowrap"><span><Image className='mr-10 ml-20' src={icon2} alt="" /></span>info@glaubes.eu

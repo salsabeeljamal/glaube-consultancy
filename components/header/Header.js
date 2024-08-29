@@ -64,13 +64,12 @@ const Header = (props) => {
                 <div className="container">
                     <div className="header__inner ul_li_between">
                         <div className="header__logo">
-                            <Link onClick={ClickHandler} href="/"><Image src={logo} alt="" width={'100px'}/></Link>
+                            <Link onClick={ClickHandler} href="/"><Image src={logo} alt="" className=''/></Link>
                         </div>
                         <div className="main-menu__wrap ul_li navbar navbar-expand-lg">
                             <nav className="main-menu collapse navbar-collapse">
                                 <ul>
-                                    <li className={router.pathname === '/' ? 'active' : ''}><Link onClick={ClickHandler} href="/"><span>Home</span></Link>
-                                    </li>
+                                    <li className={router.pathname === '/' ? 'active' : ''}><Link onClick={ClickHandler} href="/"><span>Home</span></Link></li>
                                     <li className={router.pathname === '/who-we-are' ? 'active' : ''}><Link onClick={ClickHandler} href="/who-we-are"><span>Who We Are</span></Link></li>
                                     <li className={router.pathname === '/courses' ? 'active' : ''}><Link onClick={ClickHandler} href="/courses"><span>Courses</span></Link></li>
                                     <li className={router.pathname === '/our-team' ? 'active' : ''}><Link onClick={ClickHandler} href="/our-team"><span>Our Team</span></Link></li>

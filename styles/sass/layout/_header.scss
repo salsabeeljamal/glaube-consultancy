@@ -238,7 +238,14 @@
 }
 
 .header__logo img{
-    width: 380px;
+
+    width: 320px;
+    @include respond(xs) {
+        width: 220px;
+    }
+    @include respond(sm) {
+        width: 300px;
+    }
 }
 
 // header two

@@ -27,7 +27,7 @@ const TourismCourses = (props) => {
         <section className="package package-bg pos-rel pb-80">
             <div className="container">
                 <div className="sec-title sec-title--travel text-center mb-40">
-                    <h3 className='text-start'>TOURISM</h3>
+                    <h3 className='text-center text-lg-start'>TOURISM</h3>
                 </div>
                 <div className="row mt-none-30">
                     {Pakage.map((pakage, pitem) => (

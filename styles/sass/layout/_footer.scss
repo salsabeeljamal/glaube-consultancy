@@ -6,6 +6,9 @@
         width: 220px;
         a {
             color: var(--color-default);
+            &:hover {
+                color: #fff;
+            }
         }
     }
     &__widget {
@@ -228,6 +231,11 @@
         }
     }
     .footer__social {
+        li {
+                &:hover {
+                    color: var(--color-black);
+            }
+        }
         @include respond(md) {
             justify-content: start;
         }

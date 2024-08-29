@@ -27,7 +27,7 @@ const SafetyCourses = (props) => {
         <section className="package package-bg pos-rel pb-80">
             <div className="container">
                 <div className="sec-title sec-title--travel text-center mb-40">
-                    <h3 className='text-start'>SAFETY MANAGEMENT</h3>
+                    <h3 className='text-center text-lg-start'>SAFETY MANAGEMENT</h3>
                 </div>
                 <div className="row mt-none-30">
                     {Pakage.map((pakage, pitem) => (

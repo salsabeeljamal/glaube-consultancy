@@ -53,7 +53,7 @@ const WhoWeArePage = (props) => {
                         <div className="col-lg-6 mt-30">
                             <div className="mission__content">
                                 <div className="sec-title">
-                                    <h2 className="mb-20 wow skewIn">Powered by<br /> <span>Professionalism</span></h2>
+                                    <h2 className="mb-20 wow skewIn text-start">Powered by<br /> <span>Professionalism</span></h2>
                                     <p>Glaube, led by experienced professionals, excels in admissions, career guidance, aptitude appraisals, documentation for international admissions, education loan facilitation, and arrival support. We ensure total reliability in identifying the right course and location, considering all academic and personal aspects of the student.</p>
                                 </div>
                             </div>
@@ -70,7 +70,7 @@ const WhoWeArePage = (props) => {
                         <div className="col-lg-6 mt-30">
                             <div className="mission__content">
                                 <div className="sec-title">
-                                    <h2 className="mb-20 wow skewIn" data-wow-delay="200ms">The Power of<br /> <span>Commitment</span></h2>
+                                    <h2 className="mb-20 wow skewIn text-start" data-wow-delay="200ms">The Power of<br /> <span>Commitment</span></h2>
                                     <p>We understand your desire to study at the best institutions, and our multilingual consultants, many with industry-recognized training, are here to help. As trusted partners of many international universities, our professional team in India and abroad coordinates with university authorities to ensure a smooth transition for students pursuing higher education. We ensure a transparent admission process, safeguarding students' interests at all locations.</p>
                                 </div>
                             </div>
