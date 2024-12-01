@@ -8,8 +8,8 @@ import cnIcon7 from '/public/images/country/latvia.png'
 import cnIcon8 from '/public/images/country/bulgaria.png'
 import cnIcon9 from '/public/images/country/germany.png'
 import cnIcon10 from '/public/images/country/malta.png'
-import cnIcon11 from '/public/images/country/Romania.png'
-import cnIcon12 from '/public/images/country/Switzerland.png'
+import cnIcon11 from '/public/images/country/romania.png'
+import cnIcon12 from '/public/images/country/switzerland.png'
 
 
 
