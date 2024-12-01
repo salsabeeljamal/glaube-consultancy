@@ -117,8 +117,19 @@
         left: 0;
         width: 3px;
         height: 46px;
+        margin-left: 10px;
+        margin-right: 10px;
         background-image: url(/images/shape/c_line.png);
         content: "";
+        @include respond(xs) {
+            display: none;
+        }
+        @include respond(sm) {
+            display: none;
+        }
+        @include respond(md) {
+            display: none;
+        }
         @include respond(lg) {
             right: -42px;
         }

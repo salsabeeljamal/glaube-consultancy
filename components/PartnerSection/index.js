@@ -93,7 +93,7 @@ const PartnerSection = (props) => {
     return (
 
         <section className="brand">
-            <FeaturesSection />
+            {/* <FeaturesSection /> */}
             <About />
         </section>
     );

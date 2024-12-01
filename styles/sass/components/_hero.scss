@@ -17,26 +17,29 @@
     
     &_img{
         background-image: url('/images/images/students_09.jpg');
+        z-index: -1;
         background-size: contain;
         background-position: right;
         @include respond(xs){
-            // background-image: url('/images/bg/hero_bg_sm.jpg');
         }
     }
     &__background{
-        background-color:rgb(16 44 87 / 44%);
+        // background-image: url('/images/bg/hero_bg_sm.jpg');
+        // @include respond(md){
+        //     background-color:rgb(16 44 87 / 44%);
+        // }
+        width: 100vw;
         display: flex;
         align-items: center;
         overflow: hidden;
     }
     &__main {
-        // background-color: #fac50b8c;
-        // background-color: rgb(16 44 87 / 65%);
-        // padding-top: 28px;
-        // padding-bottom: 28px;
+        background-color: #ebebeb8c;
         padding: 28px;
-        // border-radius: 18px;
-        // box-shadow:3px 3px 5px 0px rgb(0 0 0 / 24%);
+        border-radius: 18px;
+        border:2px solid rgb(200 200 222);
+        margin: 30px 0px 30px 20px;
+        box-shadow:5px 4px 10px 0px rgb(0 0 0 / 20%);
         @include respond(sm) {
             margin-left:auto !important;
         }
@@ -254,14 +257,35 @@
     li {
         font-size: 18px;
         font-weight: 500;
-        color: var(--color-white);
+        color: #102c57;
+        // @include respond(md){
+        //     color: var(--color-white);
+        // }
+
         &:not(:last-child) {
             margin-bottom: 11px;
         }
         i {
-            color: var(--color-white);
             margin-right: 20px;
+            color: #102c57;
+            // @include respond(md){
+            //     color: var(--color-white);
+            // }
         }
+    }
+}
+.hero__content{
+    h1 span{
+        color: #102c57;
+            // @include respond(md){
+            //     color: var(--color-white);
+            // }
+    }
+    p{
+        color: #102c57;
+            // @include respond(md){
+            //     color: var(--color-white);
+            // }
     }
 }
 .xb-hero-content2 {

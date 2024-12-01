@@ -16,16 +16,13 @@ const ContactForm = (props) => {
         phone: '',
         message: ''
     });
+    const [renderKey, setRenderKey] = useState(0);
+
     const [validator] = useState(new SimpleReactValidator({
         className: 'errorMessage'
     }));
     const changeHandler = e => {
         setForms({ ...forms, [e.target.name]: e.target.value })
-        if (validator.allValid()) {
-            validator.hideMessages();
-        } else {
-            validator.showMessages();
-        }
     };
 
     const submitHandler = e => {
@@ -40,7 +37,9 @@ const ContactForm = (props) => {
                 message: ''
             })
         } else {
+            console.log("furry")
             validator.showMessages();
+            setRenderKey((prev) => prev + 1);
         }
     };
 
@@ -86,11 +85,11 @@ const ContactForm = (props) => {
                             type="text"
                             className="form-control"
                             name="subject">
-                            <option>Student Visa</option>
-                            <option>Tourist Visa</option>
-                            <option>Commercial Visa</option>
-                            <option>Residence Visa</option>
-                            <option>Working Visa</option>
+                            <option>Student Visa Services</option>
+                            <option>Research Opportunities</option>
+                            <option>PhD Guidance & Support</option>
+                            <option>Job Seeking Assistance</option>
+                            <option>Internship Placement Services</option>
                         </select>
                         {validator.message('subject', forms.subject, 'required')}
                     </div>

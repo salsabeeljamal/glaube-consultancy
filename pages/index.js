@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useEffect } from 'react';
 import Header from '../components/header/Header';
 import Hero from '../components/hero/hero';
 import PartnerSection from '../components/PartnerSection';
@@ -16,9 +16,13 @@ import NewsLatter from '../components/NewsLatter/NewsLatter';
 import ContactSection from '../components/ContactSection';
 import Footer from '../components/footer/Footer';
 import Scrollbar from '../components/scrollbar/scrollbar';
+import Process from '../components/Process';
 
 
 const HomePage = () => {
+    useEffect(()=>{
+        window.scrollTo(0,0);
+    },[])
 
     return (
         <Fragment>
@@ -28,8 +32,10 @@ const HomePage = () => {
                 <PartnerSection />
                 <CountrySection />
                 <ServiceSection />
-                <Testimonial />
-                <StudentFaqSection/>
+                {/* <Testimonial /> */}
+                <Process/>
+                {/* <StudentFaqSection/> */}
+                <ContactSection/>
                 <Footer />
                 <Scrollbar />
             </div>

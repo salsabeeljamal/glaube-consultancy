@@ -10,7 +10,7 @@ import professionalism from '/public/images/images/professionalism.jpg'
 import commitment from '/public/images/images/commitment.jpg'
 
 import Image from 'next/image';
-import CoreValue from '../../components/CoreValue';
+import CoreValue from '../../components/Process';
 
 
 
