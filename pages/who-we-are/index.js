@@ -10,7 +10,7 @@ import professionalism from '/public/images/images/professionalism.jpg'
 import commitment from '/public/images/images/commitment.jpg'
 
 import Image from 'next/image';
-import CoreValue from '../../components/Process';
+import Process from '../../components/Process';
 
 
 
@@ -78,7 +78,7 @@ const WhoWeArePage = (props) => {
                     </div>
                 </div>
             </section>
-            <CoreValue/>
+            {/* <CoreValue/> */}
             <Footer />
             <Scrollbar />
         </Fragment>
