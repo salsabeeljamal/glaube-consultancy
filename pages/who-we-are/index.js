@@ -22,21 +22,6 @@ const WhoWeArePage = (props) => {
             <PageTitle pageTitle={'Who We Are'} pagesub={'Who We Are'} />
             <About />
             <section className="about pt-190">
-                {/* <div className="container">
-                    <div className="row mb-40 align-items-center">
-                        <div className="col-lg-6">
-                            <div className="sec-title mb-20">
-                                <h2 className="wow skewIn">What We Do
-                                </h2>
-                            </div>
-                        </div>
-                        <p>With extensive experience in academics, management strategy, marketing communications, career guidance, and international documentation, we have successfully placed over 2,000 students in prestigious universities worldwide. Our expertise has helped students achieve their dreams of studying and working in countries such as Portugal, Spain, Lithuania, Ukraine, and more.</p>
-
-                    </div>
-                    <div className="xb-about__img">
-                        <Image src={aboutImg} alt="" />
-                    </div>
-                </div> */}
                     <CtaSection />
                     <StudentFunFact />
             </section>
