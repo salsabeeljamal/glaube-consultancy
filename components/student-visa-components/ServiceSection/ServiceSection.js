@@ -17,7 +17,8 @@ const ServiceSection = (props) => {
     }
 
     return (
-        <section className="service service-bottom-pb pos-rel black-bg pt-120" id="Services">
+        <section className="service service-bottom-pb pos-rel black-bg pt-120" id="Process">
+            
             <div className="container">
                 <div className="xb-service__top ul_li_between mb-20">
                     <div className="sec-title sec-title--white style-2 mb-20">

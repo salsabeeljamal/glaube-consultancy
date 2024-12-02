@@ -31,9 +31,9 @@ const HomePage = () => {
                 <Hero />
                 <PartnerSection />
                 <CountrySection />
-                <ServiceSection />
-                {/* <Testimonial /> */}
                 <Process/>
+                {/* <ServiceSection /> */}
+                {/* <Testimonial /> */}
                 {/* <StudentFaqSection/> */}
                 <ContactSection/>
                 <Footer />

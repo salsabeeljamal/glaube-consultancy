@@ -97,7 +97,7 @@ const Header = (props) => {
                                     <li className={router.asPath === '/#about' ? 'active' : ''}><a onClick={ClickHandler} href="/#about"><span>About Us</span></a></li>
                                     <li className={router.asPath === '/#countries' ? 'active' : ''}><a onClick={ClickHandler} href="/#countries"><span>Countries</span></a></li>
                                     {/* <li className={router.pathname === '/courses' ? 'active' : ''}><Link onClick={ClickHandler} href="/courses"><span>Courses</span></Link></li> */}
-                                    <li className={router.asPath === '/#services' ? 'active' : ''}><a onClick={ClickHandler} href="/#services"><span>Services</span></a></li>
+                                    {/* <li className={router.asPath === '/#services' ? 'active' : ''}><a onClick={ClickHandler} href="/#services"><span>Services</span></a></li> */}
                                     <li className={router.asPath === '/#process' ? 'active' : ''}><a onClick={ClickHandler} href="/#process"><span>Process</span></a></li>
                                     <li className={router.pathname === '/#contact' ? 'active' : ''}><a onClick={ClickHandler} href="/#contact"><span>Contact</span></a></li>
                                 </ul>

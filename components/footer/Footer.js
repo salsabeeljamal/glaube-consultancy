@@ -92,14 +92,14 @@ const Footer = (props) => {
 
                     <div className="col-lg-4 mt-60 col-md-12 footer__social-block">
                         <div className="footer__widget">
-                            <h3 className="widget-title d-lg-block flex-column text-center text-lg-start">Social Links</h3>
+                            <h3 className="widget-title d-lg-block flex-column text-center text-lg-center">Social Links</h3>
                         </div>
                         <div className="footer-links">
-                            <ul className="footer__socials  ul_li_right mt-30 justify-content-center">
-                                <li className='mr-40'><Link onClick={ClickHandler} href="/"><i className="fab fa-twitter"></i></Link></li>
-                                <li className='mr-40'><Link onClick={ClickHandler} href="/"><i className="fab fa-facebook-f"></i></Link></li>
-                                <li className='mr-40'><Link onClick={ClickHandler} href="/"><i className="fab fa-linkedin-in"></i></Link></li>
-                                <li className=''><Link onClick={ClickHandler} href="/"><i className="fab fa-instagram"></i></Link></li>
+                            <ul className="footer__socials  ul_li_right mt-30 justify-content-center gap-4">
+                                <li className=''><Link target="#blank" href="https://www.facebook.com/your.glaube"><i className="fab fa-facebook-f"></i></Link></li>
+                                <li className=''><Link target="#blank" href="https://www.instagram.com/glaube_consultancy"><i className="fab fa-instagram"></i></Link></li>
+                                {/* <li className='mr-40'><Link onClick={ClickHandler} href="/"><i className="fab fa-twitter"></i></Link></li> */}
+                                {/* <li className='mr-40'><Link onClick={ClickHandler} href="/"><i className="fab fa-linkedin-in"></i></Link></li> */}
                             </ul>
                         </div>
                     </div>
@@ -143,8 +143,8 @@ const Footer = (props) => {
                     <div className="footer__copyright-text mt-15">
                         Copyright © 2024 Glaube Consultancy All rights reserved.
                     </div>
-                    <div className="footer__copyright-img mt-20">
-                        <Image src={icon3} alt="" />
+                    <div className="footer__dev mt-20 ">
+                        Developed by DB Innovations Porto,Portugal
                     </div>
                 </div>
             </div>

@@ -25,17 +25,44 @@ const ContactForm = (props) => {
         setForms({ ...forms, [e.target.name]: e.target.value })
     };
 
-    const submitHandler = e => {
+    const submitHandler = async(e) => {
         e.preventDefault();
         if (validator.allValid()) {
             validator.hideMessages();
-            setForms({
-                name: '',
-                email: '',
-                subject: '',
-                phone: '',
-                message: ''
-            })
+            try {
+                const response = await fetch('https://api.glaubes.eu/api/contact', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/x-www-form-urlencoded',
+                    },
+                    body: new URLSearchParams({
+                        name: forms.name,
+                        email: forms.email,
+                        subject: forms.subject,
+                        phone: forms.phone,
+                        message: forms.message,
+                    }).toString()
+                });
+    
+                const data = await response.json();
+    
+                if (response.ok) {
+                    // Reset the form after successful submission
+                    setForms({
+                        name: '',
+                        email: '',
+                        subject: '',
+                        phone: '',
+                        message: '',
+                    });
+                    alert('Message sent successfully');
+                } else {
+                    alert('Failed to send message. Please try again later.');
+                }
+            } catch (error) {
+                console.error('Error sending form data:', error);
+                alert('An error occurred. Please try again later.');
+            }
         } else {
             console.log("furry")
             validator.showMessages();
