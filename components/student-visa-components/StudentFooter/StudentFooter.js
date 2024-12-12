@@ -50,7 +50,7 @@ const StudentFooter = (props) => {
                 </div>
                 <div className="copyright-area mt-30 ul_li_between">
                     <div className="copyright-text mt-20">
-                        Copyright © 2024 e.visa. <span>All rights reserved.</span>
+                        Copyright © 2024 glaubes.eu. <span>All rights reserved.</span>
                     </div>
                     <ul className="footer-links ul_li_right mt-20">
                         <li><Link onClick={ClickHandler} href="/contact">Privacy Policy</Link></li>

@@ -8,11 +8,50 @@
         align-items: center;
         overflow: hidden;
         @include respond(laptop) {
-            min-height: 700px;
+            min-height: 620px;
         }
         @include respond(lg) {
-            min-height: 670px;
+            min-height: 620px;
         }
+    }
+    
+    &_img{
+        background-image: url('/images/images/students_09.jpg');
+        z-index: -1;
+        background-size: contain;
+        background-position: right;
+        @include respond(xs){
+        }
+    }
+    &__background{
+        // background-image: url('/images/bg/hero_bg_sm.jpg');
+        // @include respond(md){
+        //     background-color:rgb(16 44 87 / 44%);
+        // }
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+    }
+    &__main {
+        background-color: #ebebeb8c;
+        padding: 28px;
+        border-radius: 18px;
+        border:2px solid rgb(200 200 222);
+        margin: 30px 0px 30px 20px;
+        box-shadow:5px 4px 10px 0px rgb(0 0 0 / 20%);
+        @include respond(sm) {
+            margin-left:auto !important;
+        }
+        @include respond(md) {
+            margin-left:auto !important;
+        }
+        @include respond(lg) {
+            margin-left:40px;
+        }
+        // border: 20px #fac50b8c;
+        // padding-right: 100px;
+
     }
     &__content {
         h1 {
@@ -218,14 +257,35 @@
     li {
         font-size: 18px;
         font-weight: 500;
-        color: var(--color-dark);
+        color: #102c57;
+        // @include respond(md){
+        //     color: var(--color-white);
+        // }
+
         &:not(:last-child) {
             margin-bottom: 11px;
         }
         i {
-            color: var(--color-default);
             margin-right: 20px;
+            color: #102c57;
+            // @include respond(md){
+            //     color: var(--color-white);
+            // }
         }
+    }
+}
+.hero__content{
+    h1 span{
+        color: #102c57;
+            // @include respond(md){
+            //     color: var(--color-white);
+            // }
+    }
+    p{
+        color: #102c57;
+            // @include respond(md){
+            //     color: var(--color-white);
+            // }
     }
 }
 .xb-hero-content2 {

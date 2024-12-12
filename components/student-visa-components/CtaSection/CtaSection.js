@@ -26,7 +26,7 @@ const CtaSection = (props) => {
                             </div>
                         </div>
                     </div>
-                    <div className="xb-cta__img" style={{ backgroundImage: `url(${'/images/bg/cta_img.jpg'})` }}></div>
+                    <div className="xb-cta__img" style={{ backgroundImage: `url(${'/images/images/do.jpg'})` }}></div>
                 </div>
             </div>
         </section>

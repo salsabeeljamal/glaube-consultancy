@@ -16,31 +16,57 @@ const ContactForm = (props) => {
         phone: '',
         message: ''
     });
+    const [renderKey, setRenderKey] = useState(0);
+
     const [validator] = useState(new SimpleReactValidator({
         className: 'errorMessage'
     }));
     const changeHandler = e => {
         setForms({ ...forms, [e.target.name]: e.target.value })
-        if (validator.allValid()) {
-            validator.hideMessages();
-        } else {
-            validator.showMessages();
-        }
     };
 
-    const submitHandler = e => {
+    const submitHandler = async(e) => {
         e.preventDefault();
         if (validator.allValid()) {
             validator.hideMessages();
-            setForms({
-                name: '',
-                email: '',
-                subject: '',
-                phone: '',
-                message: ''
-            })
+            try {
+                const response = await fetch('https://api.glaubes.eu/api/contact', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/x-www-form-urlencoded',
+                    },
+                    body: new URLSearchParams({
+                        name: forms.name,
+                        email: forms.email,
+                        subject: forms.subject,
+                        phone: forms.phone,
+                        message: forms.message,
+                    }).toString()
+                });
+    
+                const data = await response.json();
+    
+                if (response.ok) {
+                    // Reset the form after successful submission
+                    setForms({
+                        name: '',
+                        email: '',
+                        subject: '',
+                        phone: '',
+                        message: '',
+                    });
+                    alert('Message sent successfully');
+                } else {
+                    alert('Failed to send message. Please try again later.');
+                }
+            } catch (error) {
+                console.error('Error sending form data:', error);
+                alert('An error occurred. Please try again later.');
+            }
         } else {
+            console.log("furry")
             validator.showMessages();
+            setRenderKey((prev) => prev + 1);
         }
     };
 
@@ -72,7 +98,7 @@ const ContactForm = (props) => {
                             className="form-control"
                             onBlur={(e) => changeHandler(e)}
                             onChange={(e) => changeHandler(e)}
-                            placeholder="e.visa@services.com" />
+                            placeholder="info@glaubes.eu" />
                         {validator.message('email', forms.email, 'required|email')}
                     </div>
                 </div>
@@ -86,11 +112,11 @@ const ContactForm = (props) => {
                             type="text"
                             className="form-control"
                             name="subject">
-                            <option>Student Visa</option>
-                            <option>Tourist Visa</option>
-                            <option>Commercial Visa</option>
-                            <option>Residence Visa</option>
-                            <option>Working Visa</option>
+                            <option>Student Visa Services</option>
+                            <option>Research Opportunities</option>
+                            <option>PhD Guidance & Support</option>
+                            <option>Job Seeking Assistance</option>
+                            <option>Internship Placement Services</option>
                         </select>
                         {validator.message('subject', forms.subject, 'required')}
                     </div>

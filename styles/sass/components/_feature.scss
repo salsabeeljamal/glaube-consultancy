@@ -2,6 +2,19 @@
 /*  16. feature
 /*----------------------------------------*/
 .xb-feature1 {
+    @include respond(xs){
+        display: flex !important;
+        flex-direction: column;
+        align-items: start;
+    }
+    @include respond(md){
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    @include respond(lg){
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
     .xb-item {
         &--inner {
             margin-top: 30px;
@@ -61,6 +74,7 @@
             @include transition(.3s cubic-bezier(.67,.04,.3,.91));
             opacity: 1;
             position: relative;
+            min-height: 460px;
             @include respond(md) {
                 padding: 40px 30px;
             }

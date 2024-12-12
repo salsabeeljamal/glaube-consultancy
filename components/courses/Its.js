@@ -1,23 +1,11 @@
 import React from 'react'
 import Link from 'next/link'
-import pImg1 from '/public/images/package/img_01.jpg'
-import pImg2 from '/public/images/package/img_02.jpg'
-import pImg3 from '/public/images/package/img_03.jpg'
-import pImg4 from '/public/images/package/img_04.jpg'
-import pImg5 from '/public/images/package/img_05.jpg'
-import pImg6 from '/public/images/package/img_06.jpg'
+import pImg1 from '/public/images/images/course/it1.jpg'
+import pImg2 from '/public/images/images/course/it2.jpg'
+import pImg3 from '/public/images/images/course/it3.jpg'
 
-import fIcon1 from '/public/images/country/img_01.png'
-import fIcon2 from '/public/images/country/img_02.png'
-import fIcon3 from '/public/images/country/img_03.png'
-import fIcon4 from '/public/images/country/img_04.png'
-import fIcon5 from '/public/images/country/img_05.png'
-import fIcon6 from '/public/images/country/img_06.png'
 import port from '/public/images/country/port.png'
-import fin from '/public/images/country/fin.png'
 
-import fhIcon1 from '/public/images/icon/clock.svg'
-import fhIcon2 from '/public/images/icon/user-2.svg'
 import Image from 'next/image'
 
 
@@ -35,14 +23,14 @@ const Pakage = [
         title: 'MASTERS INCOMPUTER ENGINEERING AND MOBILE COMPUTING',
         country: 'Portugal',
         disc:"POLITECHNIQUE INSTITUTE OF LEIRIA",
-        pImg: pImg1,
+        pImg: pImg2,
         flag: port,
     },
     {
         title: 'MASTERS IN COMPUTER SCIENCE',
         country: 'Portugal',
         disc:"POLITECHNIQUE INSTITUTE OF PORTALEGRE",
-        pImg: pImg1,
+        pImg: pImg3,
         flag: port,
     },
 
@@ -55,7 +43,7 @@ const ItCourses = (props) => {
         <section className="package package-bg pos-rel pb-80">
             <div className="container">
                 <div className="sec-title sec-title--travel text-center mb-40">
-                    <h3 className='text-start'>INFORMATION TECHNOLOGY ( IT )</h3>
+                    <h3 className='text-center text-lg-start'>INFORMATION TECHNOLOGY ( IT )</h3>
                 </div>
                 <div className="row mt-none-30">
                     {Pakage.map((pakage, pitem) => (

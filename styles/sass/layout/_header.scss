@@ -238,7 +238,14 @@
 }
 
 .header__logo img{
-    width: 380px;
+
+    width: 320px;
+    @include respond(xs) {
+        width: 220px;
+    }
+    @include respond(sm) {
+        width: 300px;
+    }
 }
 
 // header two
@@ -272,7 +279,8 @@
 
     .main-menu>ul>li>a {
         position: relative;
-        color: var(--color-white);
+        // color: var(--color-white);
+        color: var(--color-dark);
 
         &:hover::before {
             width: 100%;
@@ -369,7 +377,8 @@
         }
 
         .main-menu>ul>li>a {
-            color: var(--color-default);
+            // color: var(--color-default);
+            color: var(--color-dark);
             border: 0;
             padding: 34px 0;
         }
@@ -562,7 +571,8 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     transform: translateY(-100%);
     visibility: hidden;
-    background-color: var(--color-white);
+    background-color: rgba(white,0.7);
+    backdrop-filter: blur(8px);
 
     .main-menu ul li a {
         padding: 28px 0;

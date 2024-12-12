@@ -17,7 +17,8 @@ const ServiceSection = (props) => {
     }
 
     return (
-        <section className="service service-bottom-pb pos-rel black-bg pt-120">
+        <section className="service service-bottom-pb pos-rel black-bg pt-120" id="Process">
+            
             <div className="container">
                 <div className="xb-service__top ul_li_between mb-20">
                     <div className="sec-title sec-title--white style-2 mb-20">
@@ -36,7 +37,9 @@ const ServiceSection = (props) => {
                                     <Image src={service.sIcon} alt="" />
                                 </div>
                                 <div className="xb-item--holder">
-                                    <h3 className="xb-item--title"><Link onClick={ClickHandler} href={'/service-single/[slug]'} as={`/service-single/${service.slug}`}>{service.title}</Link></h3>
+                                    <h3 className="xb-item--title">
+                                        {/* <Link onClick={ClickHandler} href={'/service-single/[slug]'} as={`/service-single/${service.slug}`}>{service.title}</Link> */}
+                                    </h3>
                                     <p className="xb-item--content">{service.description}</p>
                                     {/* <Link onClick={ClickHandler} href={'/service-single/[slug]'} as={`/service-single/${service.slug}`} className="xb-item--link">Read more</Link> */}
                                 </div>

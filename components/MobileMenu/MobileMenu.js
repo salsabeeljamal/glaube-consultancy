@@ -12,22 +12,28 @@ const menus = [
     },
     {
         id: 2,
-        title: 'Who We Are',
-        link: '/who-we-are',
+        title: 'About Us',
+        link: '/',
     },
     {
         id: 3,
-        title: 'Courses',
-        link: '/courses',
-    }, {
-        id: 4,
-        title: 'Our Team',
-        link: '/our-team',
-    },
+        title: 'Countries',
+        link: '/',
+    }, 
+    // {
+    //     id: 4,
+    //     title: 'Services',
+    //     link: '/',
+    // },
     {
         id: 5,
+        title: 'Process',
+        link: '/',
+    },
+    {
+        id: 6,
         title: 'Contact',
-        link: '/contact',
+        link: '/',
     },
 ]
 
@@ -35,8 +41,30 @@ const MobileMenu = () => {
 
     const [openId, setOpenId] = useState(0);
 
-    const ClickHandler = () => {
-        window.scrollTo(10, 0);
+    const ClickHandler = (e) => {
+        e.preventDefault()
+        let id
+        if(e.target.innerText ==""){
+            id = "Home"
+        }else{
+            id = e.target.innerText.split(" ").join("_");
+        }
+        const targetElement = document.getElementById(id);
+        if(targetElement !== null && targetElement !== undefined){
+            let targetPosition
+            if(window.scrollY < 80){
+                const headerElement = document.getElementById('Header');
+                const height = headerElement.clientHeight;
+                targetPosition = targetElement.offsetTop - height;
+            }else{
+                targetPosition = targetElement.offsetTop;
+            }
+            window.scrollTo({
+                top: targetPosition,
+                behavior: 'smooth'
+              })
+        }else{
+        }
     }
 
     return (
@@ -44,28 +72,8 @@ const MobileMenu = () => {
             {menus.map((item, mn) => {
                 return (
                     <ListItem className={item.id === openId ? 'active' : null} key={mn}>
-                        {item.submenu ?
-                            <Fragment>
-                                <p onClick={() => setOpenId(item.id === openId ? 0 : item.id)}>{item.title}
-                                    <i className={item.id === openId ? 'fa fa-angle-up' : 'fa fa-angle-down'}></i>
-                                </p>
-                                <Collapse in={item.id === openId} timeout="auto" unmountOnExit>
-                                    <List className="subMenu">
-                                        <Fragment>
-                                            {item.submenu.map((submenu, i) => {
-                                                return (
-                                                    <ListItem key={i}>
-                                                        <Link onClick={ClickHandler} className="active"
-                                                            href={submenu.link}>{submenu.title}</Link>
-                                                    </ListItem>
-                                                )
-                                            })}
-                                        </Fragment>
-                                    </List>
-                                </Collapse>
-                            </Fragment>
-                            : <Link className="active"
-                                href={item.link}>{item.title}</Link>
+                        {<a className="active" onClick={ClickHandler}
+                                href={item.link}>{item.title}</a>
                         }
                     </ListItem>
                 )
